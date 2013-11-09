@@ -82,3 +82,19 @@
 .toggle {
     margin: 5px 5px 0 0;
 }
+
+#createDir{
+    width: 170px;
+}
+
+#message{
+    font-size:medium;
+}
+
+.statusMessage{
+    color: dodgerblue;
+}
+
+.errorMessage{
+    color: red;
+}

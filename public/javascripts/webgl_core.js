@@ -64,8 +64,8 @@ $(document).ready(function () {
         mouseY = 0;
 
         // add mouse move listener (remember we heard about it in class?)
-        document.addEventListener('mousemove', onDocumentMouseMove, false);
-        document.addEventListener('mousedown', onDocumentMouseDown, false);
+        $('#viewer').mousemove(onDocumentMouseMove);
+        $('#viewer').mousedown(onDocumentMouseDown);
 
 
         //##########################################################################
@@ -376,8 +376,9 @@ $(document).ready(function () {
 //    render();
 //}
 
-
     document.onkeypress = function (event) {
+        if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
+            return;
         var key = event.keyCode ? event.keyCode : event.which;
         var s = String.fromCharCode(key);
         if (s == 'w')
@@ -391,6 +392,8 @@ $(document).ready(function () {
     }
 
     document.onkeydown = function (event) {
+        if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
+            return;
         var key = event.keyCode ? event.keyCode : event.which;
         if (key == 38)
             rotateCameraUp();
@@ -403,9 +406,7 @@ $(document).ready(function () {
     }
 
     function onDocumentMouseDown(event) {
-
         event.preventDefault();
-
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
         projector.unprojectVector(vector, camera);
 
