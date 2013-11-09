@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#header {
+    background-color: maroon;
+    vertical-align: middle;
+    opacity: 0.7;
+    height: 40px;
+}
+
+#logo {
+    width: 125px;
+    height: 100%;
+    margin: 0;
+    background-color: yellow;
+    float: left;
+}
+
+#account {
+    width: 100px;
+    height: 100%;
+    background-color: red;
+    float: right;
+
+    border-radius: 10px;
+    display: table;
+}
+
+#account h2 {
+    display:  table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+#viewer {
+    min-height: 92%;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+#footer {
+    background-color: maroon;
+    opacity: 0.7;
+    height: 30px;
+    width: 100%;
+    display: none;
+}
+
+#footer table {
+    margin: 0 auto;
+}
+
+.nav_button {
+    background-color: lightgray;
+    border-radius: 10px;
+    opacity: 0.8;
+    min-height: 80%;
+}
