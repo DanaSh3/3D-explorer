@@ -1,24 +1,30 @@
-html, body {
-  margin: 0;
-  min-height: 100%;
-  width: auto;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 /* global css styles */
 /* @group resets */
 * { margin: 0; padding: 0; }
-/*html { height: 100%; font-family: Arial, Tahoma, Verdana, sans-serif; }*/
 
-/*body { font-size: 62.5%; background: #fff; }*/
+
+html{
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+    background-color: darkgray;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
 a {
   color: #00B7FF;
 }
 
 #viewer {
-    min-height: 700px;
-    width: 100%;
+    margin: auto;
+    height: 99.63%;
+    width: 99.63%;
     background-color: darkgrey;
 }
 

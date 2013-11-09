@@ -137,13 +137,16 @@ $(document).ready(function () {
         scene.add(cube);
 //    objects.push(cube);
 
+        var starTexture = new THREE.ImageUtils.loadTexture('/images/stars.jpg');
+        var starMaterial = new THREE.MeshLambertMaterial({map: starTexture});
+
         // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
         floor = new THREE.Mesh(
-            new THREE.PlaneGeometry(500, 500, 10, 10),
-            new THREE.MeshLambertMaterial({color: 0xCEB2B3}));    // color
+            new THREE.PlaneGeometry(windowHalfX * 5, windowHalfY * 5, 10, 10),
+            starMaterial);
         floor.receiveShadow = true;
         floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
-        floor.position.y = -25;                                   // move it a little, to match bottom of the cube
+        floor.position.y = -500;                                   // move it a little, to match bottom of the cube
         scene.add(floor);
 
         // since we will be adding similar walls, we can reuse the geometry and material
@@ -151,32 +154,32 @@ $(document).ready(function () {
         var wallMaterial = new THREE.MeshPhongMaterial({color: 0xAAFF66});
 
         // here is a wall, by default planes are vertical
-        wall1 = new THREE.Mesh(wallGeometry, wallMaterial);
+        wall1 = new THREE.Mesh(wallGeometry, starMaterial);
         wall1.receiveShadow = true;
         wall1.position.z = -250;                // move it back
-        scene.add(wall1);
+//        scene.add(wall1);
 
         // here is a wall, by default planes are vertical
-        wall2 = new THREE.Mesh(wallGeometry, wallMaterial);
+        wall2 = new THREE.Mesh(wallGeometry, starMaterial);
         wall2.receiveShadow = true;
         wall2.rotation.y = Math.PI / 2;         // rotate to get perpendicular wall
         wall2.position.x = -250;                // move it left
-        scene.add(wall2);
+//        scene.add(wall2);
 
         // here is a wall, by default planes are vertical
-        wall3 = new THREE.Mesh(wallGeometry, wallMaterial);
+        wall3 = new THREE.Mesh(wallGeometry, starMaterial);
         wall3.position.x = 250;                 // move it right
         wall3.rotation.y = -Math.PI / 2;       // rotate to get perpendicular wall
         wall3.receiveShadow = true;
-        scene.add(wall3);
+//        scene.add(wall3);
 
         // here is a wall, by default planes are vertical
-        wall4 = new THREE.Mesh(wallGeometry, wallMaterial);
+        wall4 = new THREE.Mesh(wallGeometry, starMaterial);
         wall4.position.z = 250;                 // move it front
         wall4.rotation.y = Math.PI;             // rotate it 180 degrees, so the "front" will face towards us,
         // otherwise we will "look through" the plane
         wall4.receiveShadow = true;
-        scene.add(wall4);
+//        scene.add(wall4);
     }
 
 // lights tutorial - there has to be light in the scene
@@ -210,25 +213,17 @@ $(document).ready(function () {
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
         projector.unprojectVector(vector, camera);
         vector.sub(camera.position).normalize();
-        vector.multiplyScalar(10 * zoom);
+        vector.multiplyScalar(20 * zoom);
         vector.y = 0;
 
         camera.position.add(vector);
         target.add(vector);
+        light.position.add(vector);
         camera.position.y -= zoom * 10;
         target.y -= zoom * 10;
+        floor.position.y -= zoom * 10;
+        light.position.y -= zoom * 10;
 
-        render();
-    }
-
-    function zoomOutCamera() {
-        var offset = new THREE.Vector3(0, 0, 0);
-        var dist = camera.position.distanceTo(target);
-        offset.add(camera.position);
-        offset.x -= (target.x - camera.position.x) / (dist / 10);
-        offset.y -= (target.y - camera.position.y) / (dist / 10);
-        offset.z -= (target.z - camera.position.z) / (dist / 10);
-        camera.position.set(offset.x, offset.y, offset.z);
         render();
     }
 
@@ -292,7 +287,9 @@ $(document).ready(function () {
     }
 
 
-    document.onkeypress = function (event) {
+    $('#viewer').onkeypress = function (event) {
+        if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
+            return;
         var key = event.keyCode ? event.keyCode : event.which;
         var s = String.fromCharCode(key);
         if (s == 'w')
@@ -306,6 +303,8 @@ $(document).ready(function () {
     }
 
     document.onkeydown = function (event) {
+        if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
+            return;
         var key = event.keyCode ? event.keyCode : event.which;
         if (key == 38)
             rotateCameraUp();
