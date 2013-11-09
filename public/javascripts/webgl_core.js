@@ -62,8 +62,9 @@ $(document).ready(function () {
         mouseY = 0;
 
         // add mouse move listener (remember we heard about it in class?)
-        document.addEventListener('mousemove', onDocumentMouseMove, false);
-        document.addEventListener('mousedown', onDocumentMouseDown, false);
+        var viewer = document.getElementById('viewer');
+        viewer.addEventListener('mousemove', onDocumentMouseMove, false);
+        viewer.addEventListener('mousedown', onDocumentMouseDown, false);
 
 
         //##########################################################################
