@@ -26,13 +26,30 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+    app.use(express.errorHandler());
 }
 
 app.get('/3dexplorer', routes.index);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+var io = require('socket.io').listen(app.listen(app.get('port')));
+
+/*http.createServer(app).listen(app.get('port'), function(){
+ console.log('Express server listening on port ' + app.get('port'));
+ });*/
+
+io.sockets.on('connection', function (socket) {
+    //socket.emit('message', { message: 'welcome to the chat' });
+    console.log("Web Socket Connection Established");
+    socket.on('mkdir', function (data) {
+        fs.mkdir("/Users/Sean/WebstormProjects/master-SEAN/public/" + data.dir, 0777, function(err){
+            if(err){
+                console.log("CANNOT CREATE HOME DIRECTORY!");
+            }else{
+                console.log("Successfully created file ");
+            }
+        });
+        io.sockets.emit('mkdir', data);
+    });
 });
 
-app.post('/create', routes.createDirectory);
+//app.post('/create', routes.createDirectory);
