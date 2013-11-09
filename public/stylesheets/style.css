@@ -68,5 +68,8 @@ h3 { font-weight: normal; font-family: Verdana, Arial, sans-serif; color: #e57f0
 .crumbs li a:active { color: #333; background-position: 100% -96px; }
 .crumbs li.first a span { height: 5%; width: 1%; border-left: 1px solid #d9d9d9; position: absolute; top: 0px; left: 0px; }
 
-
+div ul li form {
+    margin: 0 auto;
+    display: none;
+}
 

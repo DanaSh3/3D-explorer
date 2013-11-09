@@ -27,3 +27,9 @@ $(function() {
         }
     });
 });
+
+
+
+ $("li .create_directory").click(function(e){
+        $("form").toggle();
+  });
