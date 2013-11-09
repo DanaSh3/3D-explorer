@@ -1,59 +1,24 @@
 <%include header%>
 
+<!-- Side Menu -->
+<%include sidemenu %>
+<!-- /Side Menu -->
 
-<div id="wrapper">
-
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Explorer</a>
-        </div>
-    </nav>
-</div>
 
 <div id="viewer">
 
 </div>
-
-<div id="footer">
-    <table>
-        <tr>
-            <td>
-                <div class="nav_button">
-                    <h2>Room</h2>
-                </div>
-            </td>
-            <td>
-                <div class="nav_button">
-                    <h2>Bookshelf</h2>
-                </div>
-            </td>
-            <td>
-                <div class="nav_button">
-                    <h2>Jukebox</h2>
-                </div>
-            </td>
-            <td>
-                <div class="nav_button">
-                    <h2>Photo Album</h2>
-                </div>
-            </td>
-            <td>
-                <div class="nav_button">
-                    <h2>TV</h2>
-                </div>
-            </td>
-
-        </tr>
-    </table>
+<div id="breadcrumb">
+    <ul class="crumbs">
+        <li class="first"><a href="#" style="z-index:9;"><i class="glyphicon glyphicon-home"></i></a></li>
+        <li><a href="#" style="z-index:8;">NOO</a></li>
+        <li><a href="#" style="z-index:7;">SHIT</a></li>
+        <li><a href="#" style="z-index:6;">NOOO</a></li>
+    </ul>
 </div>
 
-</body>
-</html>
+<script type="text/javascript">
+    $('#breadcrumb').setAttribute("top", (window.height - 25) + "px");
+</script>
+<%include footer%>
+

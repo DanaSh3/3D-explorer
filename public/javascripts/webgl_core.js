@@ -107,7 +107,7 @@ $(document).ready(function () {
         // initializing every part of the WebGL - initGUI is optional (that's another library)
         initGeometry();
         initLights();
-        //initGUI();                  // gives you little box in the top right corner to manipulate size of the cube
+//        initGUI();                  // gives you little box in the top right corner to manipulate size of the cube
         target.add(cube1.position);
     }
 
