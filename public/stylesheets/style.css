@@ -1,32 +1,17 @@
-/* global css styles */
-/* @group resets */
-* { margin: 0; padding: 0; }
-
-
-html{
-    margin: 0;
-    height: 100%;
-    width: auto;
-}
-
-body {
+html, body {
   margin: 0;
   height: 100%;
-  width: 100%;
-    background-color: darkgray;
+  width: auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-
 
 a {
   color: #00B7FF;
 }
 
 #viewer {
-    margin: auto;
-    height: 99.63%;
-    width: 99.63%;
+    min-height: 100%;
+    width: 100%;
     background-color: darkgrey;
 }
 
@@ -38,6 +23,12 @@ a {
     min-height: 80%;
 }
 
+/* global css styles */
+/* @group resets */
+* { margin: 0; padding: 0; }
+html { height: 100%; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+body { font-size: 62.5%; background: #fff; }
 
 /* @group fonts */
 h2 { font-size: 2.7em; font-family: Trebuchet MS, Georgia, sans-serif; font-style: italic; color: #b8d5f5; margin-right: 60px; float: left; padding-top: 15px; }
