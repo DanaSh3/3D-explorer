@@ -2,6 +2,11 @@
  * Created by Wei on 11/2/13.
  */
 
+var socket;
+window.onload = function() {
+    socket = io.connect('http://localhost:3000');
+}
+
 $("#menu-close").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
@@ -28,33 +33,19 @@ $(function() {
     });
 });
 
- $("li .create_directory").click(function(e){
-        $("form").toggle();
-  });
+$("li .create_directory").click(function(e){
+    $("form").toggle();
+});
 
 $("#createDir").click(function(e){
     var filename = $('#file_input').val();
     if (filename.trim()){ //check if not empty (might extend)
         var path = '';
-        path = $('.h_node').last().attr('id') + "_" + filename
+        path = $('.h_node').last().attr('id') + "\/" + filename
         console.log("added folder: " + path);
         $("#hierarchy").append('<li id = "' +  path + '"class = "h_node"><a href="#" style="z-index:8;">' + filename + '</a></li>');
-        jQuery.ajax({
-            url : "/create",
-            type: "POST",
-            data : path,
-            context: $('#file_form'),
-            success: function(data, textStatus, jqXHR)
-            {
-                console.log("SUCCESS");
-                //data - response from server
-            },
-            error: function (jqXHR, textStatus, errorThrown)
-            {
-                console.log(errorThrown);
-                console.log("ERROR");
-            }
-        });
+        //SUBMIT:
+        socket.emit('mkdir', { dir: path });
         initClick();
         $('#file_input').val('');
         statusMessage("Success!", false);
