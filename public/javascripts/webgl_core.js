@@ -100,7 +100,7 @@ $(document).ready(function () {
 
         // projector is used for tracing where you click
         projector = new THREE.Projector();
-f
+
         // initializing array for objects being clicked
         objects = new Array()
 
