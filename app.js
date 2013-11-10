@@ -38,18 +38,34 @@ var io = require('socket.io').listen(app.listen(app.get('port')));
  });*/
 
 io.sockets.on('connection', function (socket) {
-    //socket.emit('message', { message: 'welcome to the chat' });
     console.log("Web Socket Connection Established");
     socket.on('mkdir', function (data) {
-        fs.mkdir("/Users/Sean/WebstormProjects/master-SEAN/public/" + data.dir, 0777, function(err){
-            if(err){
-                console.log("CANNOT CREATE HOME DIRECTORY!");
-            }else{
-                console.log("Successfully created file ");
-            }
-        });
-        io.sockets.emit('mkdir', data);
+        var path = String(data.dir);
+        path = path.replace(/\//g, '\\');
+        path = __dirname + "\\public" + path;
+        data.isError = false;
+        if (file_exists(path)){
+            data.status = data.dir + " already exists";
+        }else{
+            data.status = "Successfully created " + data.dir;
+            fs.mkdir(path, 0777, function(err){
+                if(err){
+                    data.isError = true;
+                    data.status = "Failed to create " + data.dir;
+                }
+            });
+        }
+        socket.emit('status', data);
     });
+    socket.on('showdir', function(data){
+        var path = String(data.dir);
+        path = path.replace(/\//g, '\\');
+        path = __dirname + "\\public" + path;
+        var files = fs.readdirSync(path);
+        data.files = files;
+        io.sockets.emit('showfiles', data);
+    });
+    function file_exists(file){
+        return fs.existsSync(file);
+    }
 });
-
-//app.post('/create', routes.createDirectory);
