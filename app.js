@@ -67,7 +67,32 @@ io.sockets.on('connection', function (socket) {
         var files = fs.readdirSync(path);
         data.files = files;
         io.sockets.emit('showfiles', data);
+
     });
+
+
+
+    socket.on('showAll', function(data){
+        var path = String(data.dir);
+        path = path.replace(/\//g, '\\');
+        path = __dirname + "\\public" + path;
+        var files = fs.readdirSync(path);
+        data.files = files;
+        io.sockets.emit('listChilds', data);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
     //DELETE FOLDER/FILE
     socket.on('deletedir', function(data){
         var path = String(data.dir);
@@ -77,7 +102,19 @@ io.sockets.on('connection', function (socket) {
         data.isError = false;
         data.status = "Deleted " + data.dir;
         socket.emit('status', data);
-    })
+    });
+
+    socket.on('children', function(data){
+
+        var path = String(data.dir);
+        path = path.replace(/\//g, '\\');
+        path = __dirname + "\\public" + path;
+        var files = fs.readdirSync(path);
+        data.files = files;
+        data.size = files.length;
+        io.sockets.emit('showlength', data);
+    });
+
     //DOES FILE EXIST?
     function file_exists(file){
         return fs.existsSync(file);
@@ -99,3 +136,4 @@ io.sockets.on('connection', function (socket) {
         }
     };
 });
+

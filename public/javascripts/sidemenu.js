@@ -1,6 +1,3 @@
-/**
- * Created by Wei on 11/2/13.
- */
 
 /******************************************LISTEN FOR SERVER RESPONSE*******************************************/
 
@@ -19,8 +16,11 @@ window.onload = function() {
             initSubfolder(); //make clickable
          } else {
             console.log("There is a problem:", data);
-         }
+        }
     });
+
+
+
     //display status msg
     socket.on('status', function(data){
         statusMessage(data.status, data.isError);
