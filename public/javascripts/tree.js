@@ -75,16 +75,16 @@ function initTree () {
     return T;
 }
 
-$('#show_tree').click(function(e){initTree();
-    var html = '';
-    setTimeout(function() {
-        for(var i = 0; i < T.root.children.length; i++) {
-            html += T.root.children[i].filename + " ";
-            html += T.root.children[i].isDir + " #";
-            if (T.root.children[i].children !== null)
-                html += T.root.children[i].children.length;
-            html += '\n';
-        }
-        alert(html);
-    }, 500);
-});
+//$('#show_tree').click(function(e){initTree();
+//    var html = '';
+//    setTimeout(function() {
+//        for(var i = 0; i < T.root.children.length; i++) {
+//            html += T.root.children[i].filename + " ";
+//            html += T.root.children[i].isDir + " #";
+//            if (T.root.children[i].children !== null)
+//                html += T.root.children[i].children.length;
+//            html += '\n';
+//        }
+//        alert(html);
+//    }, 500);
+//});

@@ -1,78 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df08a87a-6254-41b4-ac7f-d48e8b3ed79d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/2012 Transfer Supplement.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/2012 transfer special requirements.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/6 Универов выдающих гранты иностранцам.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Activity.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Alpha Kappa Mu.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/Application for Bunker Hill Community College.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/BHCC_Catalog2011-12Web.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Brown University/Brown University.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Cornell University.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/EasySteps BHCC.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 1.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 1.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 2.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 2.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 3.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 3.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Extracurricular experience.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/ICAdmissions.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Transfer Application 2012.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/MIT helpful tips for international students.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/MassTransfer application.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Massachusetts Institute of Technology.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/My Universities.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/TOP 20 colleges IT.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/The_reasons_I_want_to_attend_MIT new.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Top 100 Computer Science Graduate Schools Rankings .docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/UMass Amherst.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/UMass_Amherst_Int_Sponsor_Statement.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Boston/UMass_Boston_cert_of_finance.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Why_I_am_transferring_from_my_current_college_new.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/My Pictures/The Lord of the Rings/b2430341.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img044.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img045.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img046.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img047.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img048.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img049.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/mit.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/us top computer science.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Высшая лига университетов.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Расписание Айбека.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/Рецепт.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/Рецепт2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/tree.js" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\.idea\libraries\Node_js_Dependencies_for_master.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/footer.ejs" afterPath="$PROJECT_DIR$/views/footer.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/hierarchy.js" afterPath="$PROJECT_DIR$/public/javascripts/hierarchy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.ejs" afterPath="$PROJECT_DIR$/views/main.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/sidemenu.css" afterPath="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
+    <list default="true" id="df08a87a-6254-41b4-ac7f-d48e8b3ed79d" name="Default" comment="Semi final state">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sidemenu.ejs" afterPath="$PROJECT_DIR$/views/sidemenu.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/tree.js" afterPath="$PROJECT_DIR$/public/javascripts/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/webgl_core.js" afterPath="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -111,7 +42,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="23" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="2414">
+            <state line="31" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2414">
               <folding />
             </state>
           </provider>
@@ -120,7 +51,25 @@
       <file leaf-file-name="tree.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="1" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.40869564" vertical-offset="1040" max-vertical-offset="1615">
+            <state line="76" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5269565" vertical-offset="989" max-vertical-offset="1615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidemenu.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="43" selection-start="518" selection-end="518" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -129,7 +78,7 @@
       <file leaf-file-name="webgl_core.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="16" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="8466">
+            <state line="60" column="50" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="8755">
               <folding />
             </state>
           </provider>
@@ -170,10 +119,10 @@
         <option value="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
         <option value="$PROJECT_DIR$/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
+        <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/tree.js" />
       </list>
     </option>
@@ -240,6 +189,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,7 +384,15 @@
       <created>1384088901138</created>
       <updated>1384088901138</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Semi final state">
+      <created>1384100516364</created>
+      <updated>1384100516364</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Semi final state">
+      <created>1384100991546</created>
+      <updated>1384100991546</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -504,7 +475,8 @@
     <MESSAGE value="Folder clicking logic completed" />
     <MESSAGE value="Circles + folders implemented" />
     <MESSAGE value="Adding circles and files dynamically merged" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding circles and files dynamically merged" />
+    <MESSAGE value="Semi final state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semi final state" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -541,20 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="16" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="8466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.65156794" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="2227">
@@ -587,16 +545,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="50" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="8755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="23" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="2414">
+        <state line="31" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="43" selection-start="518" selection-end="518" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.40869564" vertical-offset="1040" max-vertical-offset="1615">
+        <state line="76" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5269565" vertical-offset="989" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>

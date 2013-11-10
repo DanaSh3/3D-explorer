@@ -55,6 +55,23 @@ $(document).ready(function () {
     var BUFF_DIST = 6*RADIUS;
     var total= 5; //change this to any number
 
+    var msg = "Hello! Press:\n";
+    msg += " + and - to add and remove folders\n";
+    msg += " [ and ] to add and remove files\n";
+    msg += " + and - to add and remove folders\n";
+    msg += " 'left' and 'right' to rotate camera left and right\n";
+    msg += " 'up' and 'down' to rotate camera up and down\n";
+    msg += "Supports:\n";
+    msg += " Mouse Scroll - Zoom In/Out\n";
+    msg += " Mouse Hold and Move - Drag\n";
+    msg += "Features (Now):\n";
+    msg += " transparent parent folder\n";
+    msg += " change color of the subfolders\n";
+    msg += " navigation via side panel\n";
+    msg += " add folder via side panel\n";
+    msg += " remove folder via side panel\n";
+    setTimeout(function(){alert(msg)}, 500);
+
     init();
     animate(new Date().getTime());
     render();
