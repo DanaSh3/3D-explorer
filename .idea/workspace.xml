@@ -2,46 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df08a87a-6254-41b4-ac7f-d48e8b3ed79d" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\History.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\benchmarks\decode.bench.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\benchmarks\encode.bench.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\benchmarks\runner.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\logger.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\manager.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\namespace.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\parser.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\socket.io.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\socket.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\static.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\store.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\stores\memory.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\stores\redis.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transport.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\flashsocket.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\htmlfile.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\http-polling.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\http.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\jsonp-polling.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\websocket.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\websocket\default.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\websocket\hybi-07-12.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\websocket\hybi-16.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\websocket\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\node_modules\socket.io\lib\transports\xhr-polling.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/2012 Transfer Supplement.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/2012 transfer special requirements.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/6 Универов выдающих гранты иностранцам.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Activity.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Alpha Kappa Mu.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/Application for Bunker Hill Community College.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/BHCC_Catalog2011-12Web.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Brown University/Brown University.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Cornell University.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/EasySteps BHCC.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 1.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 1.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 2.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 2.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 3.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 3.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Essay 4.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Essays/Essay 4.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Cornell University/Extracurricular experience.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/ICAdmissions.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/MIT Transfer Application 2012.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/MIT helpful tips for international students.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/MassTransfer application.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Massachusetts Institute of Technology.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/My Universities.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/TOP 20 colleges IT.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/The_reasons_I_want_to_attend_MIT new.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Top 100 Computer Science Graduate Schools Rankings .docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/UMass Amherst.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Amherst/UMass_Amherst_Int_Sponsor_Statement.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/UMass Boston/UMass_Boston_cert_of_finance.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/MIT/Why_I_am_transferring_from_my_current_college_new.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/My Pictures/The Lord of the Rings/b2430341.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img044.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img045.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img046.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img047.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img048.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/img049.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/mit.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Gmail/us top computer science.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Высшая лига университетов.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Universities/Расписание Айбека.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/Рецепт.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Recepies/Рецепт2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/tree.js" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\.idea\libraries\Node_js_Dependencies_for_master.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/footer.ejs" afterPath="$PROJECT_DIR$/views/footer.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/hierarchy.js" afterPath="$PROJECT_DIR$/public/javascripts/hierarchy.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.ejs" afterPath="$PROJECT_DIR$/views/main.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" afterPath="$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/sidemenu.css" afterPath="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sidemenu.ejs" afterPath="$PROJECT_DIR$/views/sidemenu.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/sidemenu.js" afterPath="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/webgl_core.js" afterPath="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="master.iws" />
@@ -68,16 +100,27 @@
       <file leaf-file-name="main.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/main.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="0" column="12" selection-start="10" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="23" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="2414">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <file leaf-file-name="tree.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="820" selection-end="820" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="391">
+            <state line="75" column="1" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.40869564" vertical-offset="1040" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
@@ -86,19 +129,8 @@
       <file leaf-file-name="webgl_core.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="0" selection-start="6054" selection-end="6054" vertical-scroll-proportion="-0.68" vertical-offset="3196" max-vertical-offset="7786">
+            <state line="121" column="16" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="8466">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidemenu.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="24" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.6136364" vertical-offset="505" max-vertical-offset="1547">
-              <folding>
-                <marker date="1384032038636" expanded="false" signature="1261:1271" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,15 +162,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/testing.md" />
         <option value="$PROJECT_DIR$/public/javascripts/hierarchy.js" />
         <option value="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
-        <option value="$PROJECT_DIR$/views/main.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/views/main.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
+        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/tree.js" />
       </list>
     </option>
   </component>
@@ -159,7 +195,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -221,6 +257,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My Pictures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -235,646 +311,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home" />
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Pictures" />
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Documents" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\images" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/master.iml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/javascripts/hierarchy.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/javascripts/sidemenu.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/stylesheets/sidemenu.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/stylesheets/style.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/footer.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/main.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/sidemenu.ejs</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/jsLibraryMappings.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/.travis.yml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/History.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/LICENSE</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/Readme.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/benchmarks/decode.bench.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/benchmarks/encode.bench.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/benchmarks/runner.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/logger.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/manager.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/parser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/socket.io.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/socket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/static.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/store.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/stores/memory.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/stores/redis.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transport.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/flashsocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/htmlfile.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/http-polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/http.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/jsonp-polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/default.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-07-12.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/hybi-16.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/websocket/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/transports/xhr-polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/lib/util.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/lib/base64id.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/base64id/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/LICENSE</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/doc/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/examples/basic.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/lib/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.crt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.private.key</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/buffer_bench.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/hiredis_parser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/re_sub_test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/reconnect_test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/codec.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/pub.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/run</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/pub.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/run</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/speed/00</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/speed/plot</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/speed/size-rate.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/stress/speed/speed.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/benches/sub_quit_test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/changelog.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/diff_multi_bench_output.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/auth.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/eval.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/extend.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/file.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/mget.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/monitor.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/multi.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/multi2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/psubscribe.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/pub_sub.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/simple.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/sort.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/subqueries.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/subquery.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/unix_socket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/examples/web_server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/generate_commands.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/commands.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/parser/hiredis.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/parser/javascript.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/queue.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/to_array.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/lib/util.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/mem.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/multi_bench.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/redis/test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/History.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/bin/builder.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-json/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/component-json/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/emitter.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/parser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/socket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transport.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/flashsocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling-jsonp.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling-xhr.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/websocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/util.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/component.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/debug.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/WebSocketMain.swf</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/WebSocketMainInsecure.swf</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.min.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/events.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/io.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/json.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/namespace.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/parser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/socket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transport.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/flashsocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/htmlfile.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/jsonp-polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/websocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/xhr-polling.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/transports/xhr.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/util.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/WebSocketMain.swf</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/WebSocketMainInsecure.zip</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocket.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMain.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/build.sh</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/sample.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/swfobject.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/web_socket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/uglifyjs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/uglifyjs.cmd</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/wscat</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/wscat.cmd</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/Readme.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/LICENSE</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/README</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/Tokenizer.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/ZeParser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/benchmark.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/test-parser.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/test-tokenizer.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/tests.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/unicodecategories.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.org</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/bin/uglifyjs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/docstyle.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/object-ast.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/parse-js.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/process.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib/squeeze-more.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json~</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/beautify.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/testparser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array1.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array3.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array4.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/assignment.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/concatstring.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/const.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/forstatement.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/if.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue10.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue11.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue13.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue14.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue16.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue17.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue20.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue21.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue25.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue27.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue278.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue28.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue29.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue30.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue34.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue4.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue48.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue50.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue53.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue68.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue69.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue9.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/mangle.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/null_string.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/strict-equals.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/var.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/whitespace.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/with.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array1.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array3.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array4.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/assignment.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/concatstring.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/const.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/forstatement.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/if.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue10.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue11.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue13.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue14.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue16.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue17.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue20.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue21.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue25.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue27.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue278.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue28.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue29.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue30.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue34.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue4.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue48.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue50.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue53.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue54.1.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue68.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue69.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue9.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/mangle.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/null_string.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/strict-equals.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/var.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/whitespace.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/with.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/scripts.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/269.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/app.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/embed-tokens.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/hoist.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/liftvars.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/uglify-js.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.travis.yml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/History.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/parser.benchmark.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/sender.benchmark.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/speed.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/util.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bin/wscat</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/binding.gyp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/doc/ws.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/app.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/uploader.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/public/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/public/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/ssl.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferPool.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferUtil.fallback.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/BufferUtil.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/ErrorCodes.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Receiver.hixie.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Receiver.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Sender.hixie.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Sender.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Validation.fallback.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/Validation.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/WebSocket.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/WebSocketServer.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/lib/browser.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.travis.yml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/History.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Readme.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/lib/commander.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/.index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/LICENSE</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/nan.h</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/Makefile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/lib/options.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/fixtures/test.conf</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/options.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/.npmignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/example.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/tinycolor.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/bufferutil.cc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/validation.cc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/BufferPool.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.hixie.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.hixie.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Validation.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.integration.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocketServer.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn-server.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-cert.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-key.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-cert.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-key.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/certificate.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/key.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/request.pem</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/textfile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/hybi-common.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/testserver.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/README.md</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/autotest.watchr</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/example/demo.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/lib/XMLHttpRequest.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-constants.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-events.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-headers.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/testdata.txt</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/package.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/events.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/io.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.common.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/parser.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/socket.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/worker.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/socket.io/package.json</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -1005,27 +446,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73322684" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16627635" sideWeight="0.6741214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16627635" sideWeight="0.26677316" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5003903" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.50117093" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3258786" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.50117093" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16627635" sideWeight="0.6741214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1042,92 +503,21 @@
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/testing_images'&#10;Folder clicking logic completed" />
     <MESSAGE value="Folder clicking logic completed" />
     <MESSAGE value="Circles + folders implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circles + folders implemented" />
+    <MESSAGE value="Adding circles and files dynamically merged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding circles and files dynamically merged" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="5" selection-start="9004" selection-end="9004" vertical-scroll-proportion="0.0" vertical-offset="3808" max-vertical-offset="8262">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="184" selection-end="184" vertical-scroll-proportion="0.32578397" vertical-offset="0" max-vertical-offset="574" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34136">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/hierarchy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ejs/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="379" selection-end="379" vertical-scroll-proportion="0.42424244" vertical-offset="102" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="820" selection-end="820" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="20" column="17" selection-start="379" selection-end="379" vertical-scroll-proportion="0.42424244" vertical-offset="102" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="161" selection-end="161" vertical-scroll-proportion="0.26064736" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="657" selection-end="657" vertical-scroll-proportion="0.32578397" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
+        <state line="9" column="30" selection-start="161" selection-end="161" vertical-scroll-proportion="0.26064736" vertical-offset="0" max-vertical-offset="1207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/sidemenu.css">
@@ -1137,19 +527,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/foldernav.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="0.3554007" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="6054" selection-end="6054" vertical-scroll-proportion="-0.68" vertical-offset="3196" max-vertical-offset="7786">
+        <state line="121" column="16" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="8466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.65156794" vertical-offset="0" max-vertical-offset="574">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="24" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.6136364" vertical-offset="505" max-vertical-offset="1547">
+        <state line="6" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="2227">
           <folding>
-            <marker date="1384032038636" expanded="false" signature="1261:1271" placeholder="..." />
+            <marker date="1384090182028" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="59" selection-start="820" selection-end="820" vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="162" selection-end="162" vertical-scroll-proportion="0.1184669" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="10" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="23" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.40869564" vertical-offset="1040" max-vertical-offset="1615">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -22,6 +22,7 @@ $(document).ready(function () {
     var shell;
 
     var orbit_array = new Array();
+    var cubelist = new Array();
 
 // variable for stationary cube in the center
     var cube;
@@ -47,6 +48,7 @@ $(document).ready(function () {
 
     // initialize and render
 
+    var SIDE = 25;  // of cube
     var RADIUS = 20; // of spheres
     var X1 = 20;
     var X2 = 20;
@@ -54,6 +56,7 @@ $(document).ready(function () {
     var total= 5; //change this to any number
 
     init();
+    animate(new Date().getTime());
     render();
 
     function init() {
@@ -171,16 +174,27 @@ $(document).ready(function () {
                 arr.pop();
                 orbit_count--;
             }
-            scene.remove(arr[orbit_count].pop());
+            var ret = arr[orbit_count].pop();
+            scene.remove(ret);
             size_count--;
+            return ret;
         }
     }
 
     function makeSphere() {
             var ret = new THREE.Mesh(
                 new THREE.SphereGeometry(RADIUS, X1, X2), new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide}));
+            ret.material.color.setHex(Math.random() * 0xffffff);
             return ret;
         }
+
+    function makeCube() {
+        var ret = new THREE.Mesh(
+            new THREE.CubeGeometry(SIDE, SIDE, SIDE), new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide}));
+        ret.material.color.setHex(Math.random() * 0xffffff);
+        cubelist.push(ret);
+        return ret;
+    }
 
     function initSphere(elem, pos_x, pos_y) {
         elem.position.set(pos_x, 0, pos_y);         // set position by params
@@ -208,9 +222,13 @@ $(document).ready(function () {
         // main light - we put on top, y = 500
         light = new THREE.SpotLight();
         light.position.set(0, 500, 0);
+        light.target.position.set(0, -500, 0);
         light.intensity = 2.0;
         light.castShadow = true;
         scene.add(light);
+
+        ambientLight = new THREE.AmbientLight();
+        scene.add(ambientLight);
     }
 
 // knowing where the center is, and some other non-important stuff
@@ -313,12 +331,18 @@ $(document).ready(function () {
         c_o.insert(makeSphere());
         render();
     }
+
     function dec_spheres() {
         total--;
         c_o.remove();
         render();
     }
 
+    function inc_cubes() {
+        total++;
+        c_o.insert(makeCube());
+        render();
+    }
 
     //$('#viewer').onkeypress = function (event) {
     document.onkeypress = function (event) {
@@ -337,6 +361,10 @@ $(document).ready(function () {
         else if (s == '=')
             inc_spheres();
         else if (s == '-')
+            dec_spheres();
+        else if (s == '[')
+            inc_cubes();
+        else if (s == ']')
             dec_spheres();
     }
 
@@ -448,5 +476,17 @@ $(document).ready(function () {
             delete(objects[index]);
         render();
         return false;
+    }
+
+    function animate(t) {
+        for (var i = 0; i < cubelist.length; i++)
+        {
+            console.log(i);
+            cubelist[i].rotation.x = (t+i*200)/2000;
+            cubelist[i].rotation.y = (t+i*500)/2000;
+            cubelist[i].rotation.z = (t+i*100)/2000;
+        }
+        window.requestAnimationFrame(animate, renderer.domElement);
+        render();
     }
 });

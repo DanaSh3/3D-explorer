@@ -9,9 +9,17 @@
 
 </div>
 <div id="breadcrumb">
-    <ul class="crumbs" id = "hierarchy">
-        <li class="h_node" id = "home"><a href="#" style="z-index:9;"><i class="glyphicon glyphicon-home"></i></a></li>
+    <ul class="crumbs" id = "hierarchy"> <!--role="menu" aria-labelledby="dropdownMenu">-->
+        <li class="h_node" id = "/home"><a href="#" style="z-index:9;"><i class="glyphicon glyphicon-home"></i></a></li>
+        <!--THIS DROP DOWN MENU DOES NOT WORK!!
+        <li class="dropdown-toggle" data-toggle="dropdown" href="#"><a href="#" style="z-index:9;">FOLDER</a></li>-->
+        <!--<li class="dropdown-toggle" data-toggle="dropdown" href="#"><a href="#" style="z-index:9;">FOLDER</a></li>-->
+        <!--<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">-->
+            <!--<li><a tabindex="-1" href="#">File1</a></li>-->
+            <!--<li><a tabindex="-1" href="#">File2</a></li>-->
+        <!--</ul>-->
     </ul>
+    <div class = 'custom-menu' hidden = 'true'>Delete</div>
 </div>
 
 <%include footer%>

@@ -99,3 +99,36 @@
 .errorMessage{
     color: red;
 }
+
+#folder_contents{
+    color: #399966;
+    font-size: larger;
+}
+
+.subfolder {
+    display: table;
+}
+
+.subfolder img {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subfolder h5 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subfile {
+    display: table;
+}
+
+.subfile img {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subfile h5 {
+    display: table-cell;
+    vertical-align: middle;
+}
