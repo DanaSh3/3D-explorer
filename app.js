@@ -39,6 +39,7 @@ var io = require('socket.io').listen(app.listen(app.get('port')));
 
 io.sockets.on('connection', function (socket) {
     console.log("Web Socket Connection Established");
+    //MAKE DIRECTORY
     socket.on('mkdir', function (data) {
         var path = String(data.dir);
         path = path.replace(/\//g, '\\');
@@ -55,8 +56,10 @@ io.sockets.on('connection', function (socket) {
                 }
             });
         }
+        //data.isDir = fs.statSync(path).isDirectory(); //determine if directory or file
         socket.emit('status', data);
     });
+    //SHOW DIRECTORY
     socket.on('showdir', function(data){
         var path = String(data.dir);
         path = path.replace(/\//g, '\\');
@@ -65,7 +68,34 @@ io.sockets.on('connection', function (socket) {
         data.files = files;
         io.sockets.emit('showfiles', data);
     });
+    //DELETE FOLDER/FILE
+    socket.on('deletedir', function(data){
+        var path = String(data.dir);
+        path = path.replace(/\//g, '\\');
+        path = __dirname + "\\public" + path;
+        deleteFolder(path);
+        data.isError = false;
+        data.status = "Deleted " + data.dir;
+        socket.emit('status', data);
+    })
+    //DOES FILE EXIST?
     function file_exists(file){
         return fs.existsSync(file);
     }
+    //DELETE FOLDER & CONTENTS
+    function deleteFolder(path) {
+        var files = [];
+        if(file_exists(path)) {
+            files = fs.readdirSync(path);
+            files.forEach(function(file,index){
+                var curPath = path + "/" + file;
+                if(fs.statSync(curPath).isDirectory()) { // recursive call
+                    deleteFolder(curPath);
+                } else { // delete file
+                    fs.unlinkSync(curPath);
+                }
+            });
+            fs.rmdirSync(path);
+        }
+    };
 });

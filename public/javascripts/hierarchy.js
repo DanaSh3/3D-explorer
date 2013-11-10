@@ -1,18 +1,6 @@
 /**
  * Created by Oscar on 11/9/13.
  */
-/*function initClick(){
-    $('.h_node').click(function(e){
-        var path = this.id;
-        console.log(path);
-        var that = this;
-        $('[id*="' + path + '"]').each(function(){
-            if (this !== that)
-                this.remove();
-        });
-        socket.emit('mkdir', { dir: path });
-    });
-}*/
 
 //display a fancy success/error message in the side menu which will fade in and out:
 var timer;
