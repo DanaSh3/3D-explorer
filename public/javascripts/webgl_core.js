@@ -34,7 +34,7 @@ $(document).ready(function () {
 //  global shell
     var globalShell;
 
-    var fixedMaterial;
+    var outerShellMaterial;
 
 // main light
     var light, ambientLight;
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     // initialize and render
 
-    var RADIUS = 12; // of spheres
+    var RADIUS = 20; // of spheres
     var X1 = 20;
     var X2 = 20;
     var BUFF_DIST = 6*RADIUS;
@@ -125,17 +125,21 @@ $(document).ready(function () {
         shell = new THREE.Mesh(starGeometry, variableMaterial);
         scene.add(shell);
 
-        fixedMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
-        globalShell = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), fixedMaterial);
+        outerShellMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+        globalShell = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), outerShellMaterial);
         scene.add(globalShell);
+
+        c_o = new circle_orbit_obj(orbit_array);
+        for (var a = 0; a < total; a++) {
+            c_o.insert(makeSphere());
         }
+    }
 
     function circle_orbit_obj(arr) {
         var size_count = 0;
         var orbit_count = 0;
 
-        this.insert = insert;
-        function insert(elem) {
+        this.insert = function (elem) {
             if (orbit_count === 0) {
                 arr[0] = [];
                 arr[0][0] = elem;
@@ -146,7 +150,6 @@ $(document).ready(function () {
                 if (arr[orbit_count] === undefined)
                 {
                     arr[orbit_count] = new Array();
-                    alert("new orbit created!");
                 }
 
                 arr[orbit_count].push(elem);
@@ -159,12 +162,11 @@ $(document).ready(function () {
                 }
             }
             size_count++;
-            alert(size_count);
         }
 
-        this.remove = remove;
-        function remove() {
+        this.remove = function() {
             if(size_count === 0) return;
+
             if ( arr[orbit_count] === undefined || arr[orbit_count].length === 0) {
                 arr.pop();
                 orbit_count--;
@@ -172,33 +174,15 @@ $(document).ready(function () {
             scene.remove(arr[orbit_count].pop());
             size_count--;
         }
-
-        this.getLast = getLast;
-        function getLast() {
-            var ret;
-            if (arr[orbit_count] === undefined) {
-                //ret = arr[orbit_count-1][arr[orbit_count-1].length-1];
-                ret = arr[orbit_count-1].pop();
-                arr[orbit_count-1].push(ret);
-            }
-            else {
-                //ret = arr[orbit_count][arr[orbit_count].length-1];
-                ret = arr[orbit_count].pop();
-                arr[orbit_count].push(ret);
-            }
-            return ret;
-        }
     }
 
     function makeSphere() {
             var ret = new THREE.Mesh(
-                new THREE.SphereGeometry(RADIUS, X1, X2),
-                new THREE.MeshLambertMaterial({color: 0xFF0000}));
+                new THREE.SphereGeometry(RADIUS, X1, X2), new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide}));
             return ret;
         }
 
     function initSphere(elem, pos_x, pos_y) {
-        //alert("init! init!");
         elem.position.set(pos_x, 0, pos_y);         // set position by params
         elem.castShadow = true;
         elem.receiveShadow = true;
@@ -224,7 +208,7 @@ $(document).ready(function () {
         // main light - we put on top, y = 500
         light = new THREE.SpotLight();
         light.position.set(0, 500, 0);
-        light.intensity = 5.0;
+        light.intensity = 2.0;
         light.castShadow = true;
         scene.add(light);
     }
@@ -370,7 +354,7 @@ $(document).ready(function () {
             rotateCameraRight();
     }
 
-    function onDocumentMouseDown(event) {
+    $('#viewer').mousedown(function (event){
 
         event.preventDefault();
 
