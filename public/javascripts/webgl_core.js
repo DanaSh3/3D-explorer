@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 // important stuff: camera - where to look
     var camera;
+    var cameraTarget;
 
 // important stuff: scene - you add everything to it
     var scene;
@@ -17,20 +18,17 @@ $(document).ready(function () {
 
     var objects;
 
-// variables for moving cube
-    var cube1, cube2, cube3, cube4;
-
-// variable for stationary cube in the center
-    var cube;
-
-// make the "room"
-    var floor;
-
 // the outer shell of a folder
     var shell;
 
+    var variableMaterial;
+
 //  global shell
     var globalShell;
+
+    var fixedMaterial;
+
+    var starTexture;
 
 // main light
     var light, ambientLight;
@@ -38,6 +36,8 @@ $(document).ready(function () {
 // used when resizing windows and moving mouse, i.e. rotating camera
     var windowHalfX, windowHalfY;
     var mouseX, mouseY;
+    var dragging;
+    var prevDrag;
 
     // initialize and render
 
@@ -53,10 +53,15 @@ $(document).ready(function () {
         mouseX = 0;
         mouseY = 0;
 
+        dragging = false;
+        prevDrag = new THREE.Vector3(0,0,0);
+
         // add mouse move listener (remember we heard about it in class?)
         var viewer = document.getElementById('viewer');
-        viewer.addEventListener('mousemove', onDocumentMouseMove, false);
-        viewer.addEventListener('mousedown', onDocumentMouseDown, false);
+//        viewer.addEventListener('mousemove', onDocumentMouseMove, false);
+//        viewer.addEventListener('mousedown', onDocumentMouseDown, false);
+//        viewer.addEventListener('mouseup', onDocumentMouseUp, false);
+//        viewer.addEventListener('mouseleave', onDocumentMouseLeave, false);
 
 
         //##########################################################################
@@ -96,86 +101,32 @@ $(document).ready(function () {
     }
 
     function initGeometry() {
-        var starTexture = new THREE.ImageUtils.loadTexture('/images/stars_512.jpg', {}, function (){
+        starTexture = new THREE.ImageUtils.loadTexture('/images/stars_512.jpg', {}, function (){
             renderer.render(scene, camera);
         });
         starTexture.wrapS = starTexture.wrapT = THREE.RepeatWrapping;
         starTexture.repeat.set( 10, 10 );
         starTexture.needsUpdate = true;
 
-        var starMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+        variableMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide, transparent: true, opacity: 1.0});
         var starGeometry = new THREE.SphereGeometry(1000, 32, 32);
-        shell = new THREE.Mesh(starGeometry, starMaterial);
+        shell = new THREE.Mesh(starGeometry, variableMaterial);
         scene.add(shell);
+//        objects.push(shell);
 
-            //squarifyed_array();
-            circle_orbit();
-        }
+        fixedMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+        globalShell = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), fixedMaterial);
+        scene.add(globalShell);
 
-
-    function squarifyed_array () {
-
-        var RADIUS = 12;
-        var X1 = 50;
-        var X2 = 50;
-        var BUFFDIST = 2*RADIUS;
-        var total= 7; //chane this to any number
-
-
-
-        var n = Math.floor( Math.sqrt(total) );
-        alert(n);
-        var width = n;
-        var height = n;
-        var diff = total - n*n;
-
-        alert(diff);
-        if (diff === 0) {}
-        else if (diff <= n) { width++; }
-        else if (diff > n) { width++;
-            height++; }
-
-        var grid_width = (2*BUFFDIST) * width;
-        var grid_height = (2*BUFFDIST) * height;
-
-        var i, j;
-
-        spheres = new Array();
-        for (i = 0; i <= width; i++) {
-            spheres[i] = new Array();
-        }
-
-        var init_pos_x = -grid_width/2 + BUFFDIST;
-        var init_pos_y = -grid_height/2 + BUFFDIST;
-        var count = 0;
-        for (i = 0; i < width; i++) {
-            if (count === total) break;
-            for (j = 0; j < height; j++) {
-                if (count === total) break;
-                spheres[i][j] = new THREE.Mesh(
-                    new THREE.SphereGeometry(RADIUS, X1, X2),                           // supply size of the cube
-                    new THREE.MeshLambertMaterial({color: 0xFF0000}));
-                spheres[i][j].position.set(init_pos_x, 0, init_pos_y);
-                // spheres[i][j].position.set(i * 100, 50, j * 100);
-                spheres[i][j].castShadow = true;
-                spheres[i][j].receiveShadow = true;
-                scene.add(spheres[i][j]);
-                objects.push(spheres[i][j]);
-                count ++;
-                //arr[i][j] = ("pos_x: " +init_pos_x+ ", pos_y: " + init_pos_y);
-                init_pos_y += (2*BUFFDIST);
-            }
-            init_pos_y = -grid_height/2 + BUFFDIST;
-            init_pos_x += (2*BUFFDIST);
-        }
+        circle_orbit();
     }
 
     function circle_orbit() {
-        var RADIUS = 12; // of spheres
-        var X1 = 50;
-        var X2 = 50;
-        var BUFF_DIST = 6*RADIUS;
-        var total= 38; //change this to any number
+        var RADIUS = 30; // of spheres
+        var X1 = 32;
+        var X2 = 32;
+        var BUFF_DIST = 4*RADIUS;
+        var total= 51; //change this to any number
 
         var i;
         var orbit_arr = new Array();
@@ -246,9 +197,9 @@ $(document).ready(function () {
         }
 
         function makeSphere() {
+            var sphereMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
             var ret = new THREE.Mesh(
-                new THREE.SphereGeometry(RADIUS, X1, X2),
-                new THREE.MeshLambertMaterial({color: 0xFF0000}));
+                new THREE.SphereGeometry(RADIUS, X1, X2), sphereMaterial);
             return ret;
         }
 
@@ -293,7 +244,7 @@ $(document).ready(function () {
         // main light - we put on top, y = 500
         light = new THREE.SpotLight();
         light.position.set(0, 500, 0);
-        light.intensity = 2.0;
+        light.intensity = 5.0;
         light.castShadow = true;
         scene.add(light);
     }
@@ -309,12 +260,6 @@ $(document).ready(function () {
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
-// when we move mouse, this gets called (remember mouse events in class?) - we added listener before
-    function onDocumentMouseMove(event) {
-        mouseX = ( event.clientX - windowHalfX ) / 2;
-        mouseY = ( event.clientY - windowHalfY ) / 2;
-    }
-
     function zoomCamera(zoom) {
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
         projector.unprojectVector(vector, camera);
@@ -323,72 +268,73 @@ $(document).ready(function () {
         vector.y = 0;
 
         camera.position.add(vector);
-        target.add(vector);
+        cameraTarget.add(vector);
         light.position.add(vector);
+        light.target.position.add(vector);
         camera.position.y -= zoom * 10;
-        target.y -= zoom * 10;
-        floor.position.y -= zoom * 10;
+        cameraTarget.y -= zoom * 10;
         light.position.y -= zoom * 10;
+        light.target.position.y -= zoom * 10;
 
         render();
     }
 
 // used to show stuff, also updates the camera
     function render() {
-        camera.lookAt(target);
+        camera.lookAt(cameraTarget);
         renderer.render(scene, camera);
     }
 
     function rotateCameraLeft() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraRight() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraUp() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
+        cameraTarget = offset;
 
-        camera.lookAt(target);
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraDown() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, -Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
@@ -422,8 +368,7 @@ $(document).ready(function () {
             rotateCameraRight();
     }
 
-    function onDocumentMouseDown(event) {
-
+    $('#viewer').mousedown(function (event){
         event.preventDefault();
 
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
@@ -439,8 +384,50 @@ $(document).ready(function () {
             intersects[ 0 ].object.material.color.setHex(Math.random() * 0xffffff);
         }
 
+        dragging = true;
+        prevDrag = vector;
+        prevDrag.y = 0;
+
         render();
-    }
+    });
+
+    $('#viewer').mouseup(function (event){
+        dragging = false;
+        prevDrag = null;
+    });
+
+    $('#viewer').mouseout(function (event){
+        dragging = false;
+        prevDrag = null;
+    });
+
+    // when we move mouse, this gets called (remember mouse events in class?) - we added listener before
+    $('#viewer').mousemove(function (event) {
+        mouseX = ( event.clientX - windowHalfX ) / 2;
+        mouseY = ( event.clientY - windowHalfY ) / 2;
+
+        if (dragging)
+        {
+            var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
+            projector.unprojectVector(vector, camera);
+            vector.sub(camera.position).normalize();
+            vector.y = 0;
+
+            var temp = new THREE.Vector3(0,0,0);
+            temp.add(vector);
+
+            vector.sub(prevDrag);
+            vector.multiplyScalar(-400);
+
+            camera.position.add(vector);
+            cameraTarget.add(vector);
+            light.position.add(vector);
+            light.target.position.add(vector);
+
+            prevDrag = temp;
+            render();
+        }
+    });
 
     function initMouseWheel(){
         var viewer = document.getElementById('viewer');
@@ -452,8 +439,6 @@ $(document).ready(function () {
         }
 // IE 6/7/8
         else viewer.attachEvent("onmousewheel", MouseWheelHandler);
-
-
     }
 
     function MouseWheelHandler(e) {
@@ -463,6 +448,18 @@ $(document).ready(function () {
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         zoomCamera(delta*5);
 
+        var distance = camera.position.distanceTo(shell.position);
+        if (distance < 3000 && distance > 999)
+            shell.material.opacity = (distance - 1000) / 2000;
+        else
+            shell.material.opacity = 1.0;
+
+        var index = jQuery.inArray(shell, objects);
+        if (index === -1 && distance > 2600)
+            objects.push(shell);
+        else if (index !== -1 && distance < 2600)
+            delete(objects[index]);
+        render();
         return false;
     }
 });

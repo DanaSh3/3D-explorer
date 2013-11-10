@@ -7,13 +7,14 @@ html{
     margin: 0;
     height: 100%;
     width: auto;
+    background-color: #000000;
 }
 
 body {
   margin: 0;
   height: 100%;
   width: 100%;
-    background-color: darkgray;
+  background-color: #000000;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
