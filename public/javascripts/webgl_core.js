@@ -4,13 +4,12 @@
 
 $(document).ready(function () {
 
-    fun();
-
 // important stuff: renderer - it shows everything and is appended to HTML
     var renderer;
 
 // important stuff: camera - where to look
     var camera;
+    var cameraTarget;
 
 // important stuff: scene - you add everything to it
     var scene;
@@ -19,43 +18,34 @@ $(document).ready(function () {
 
     var objects;
 
-// variables for moving cube
-    var cube1, cube2, cube3, cube4;
+// the outer shell of a folder
+    var shell;
 
-// variable for stationary cube in the center
-    var cube;
+    var variableMaterial;
 
-// make the "room"
-    var floor, wall1, wall2, wall3, wall4;
+//  global shell
+    var globalShell;
+
+    var fixedMaterial;
+
+    var starTexture;
 
 // main light
-    var light;
-
-// rotating light
-    var rotatingLight;
+    var light, ambientLight;
 
 // used when resizing windows and moving mouse, i.e. rotating camera
     var windowHalfX, windowHalfY;
     var mouseX, mouseY;
+    var dragging;
+    var prevDrag;
 
+    // initialize and render
 
-    var zoom;
-    var fov;
-    var zoomin = true;
-    var target;
-
-    function fun() {
-        // initialize everything
-        init();
-//                setInterval(function(){zoomInCamera()}, 25);
-        render();
-    }
+    init();
+    render();
 
     function init() {
         // get center of the screen (half of the width/height)
-//        windowHalfX = window.innerWidth / 2;
-//        windowHalfY = window.innerHeight / 2;
-
         windowHalfX = $('#viewer').width() / 2;
         windowHalfY =  $('#viewer').height() / 2;
 
@@ -63,9 +53,15 @@ $(document).ready(function () {
         mouseX = 0;
         mouseY = 0;
 
+        dragging = false;
+        prevDrag = new THREE.Vector3(0,0,0);
+
         // add mouse move listener (remember we heard about it in class?)
-        $('#viewer').mousemove(onDocumentMouseMove);
-        $('#viewer').mousedown(onDocumentMouseDown);
+        var viewer = document.getElementById('viewer');
+//        viewer.addEventListener('mousemove', onDocumentMouseMove, false);
+//        viewer.addEventListener('mousedown', onDocumentMouseDown, false);
+//        viewer.addEventListener('mouseup', onDocumentMouseUp, false);
+//        viewer.addEventListener('mouseleave', onDocumentMouseLeave, false);
 
 
         //##########################################################################
@@ -83,17 +79,11 @@ $(document).ready(function () {
         renderer.shadowMapEnabled = true;                           // enable shadows
 
         $('#viewer').html(renderer.domElement);
-//        $('#viewer').add(renderer.domElement);             // add renderer to HTML
-
 
         // initializing camera - used to show stuff
-
         camera = new THREE.PerspectiveCamera(60, $('#viewer').width() / $('#viewer').height(), 1, 10000);       // don't worry about parameters
-        camera.position.set(0, 300, 0);
-        zoom = 1;
-        fov = camera.fov;
-        target = new THREE.Vector3(0, 0, 0);
-
+        camera.position.set(0, 500, 0);
+        cameraTarget = new THREE.Vector3(0, 0, 100);
 
         // finally initializing scene - you'll be adding stuff to it
         scene = new THREE.Scene();
@@ -107,100 +97,146 @@ $(document).ready(function () {
         // initializing every part of the WebGL - initGUI is optional (that's another library)
         initGeometry();
         initLights();
-//        initGUI();                  // gives you little box in the top right corner to manipulate size of the cube
-        target.add(cube1.position);
+        initMouseWheel();
     }
 
     function initGeometry() {
-        cube1 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
-        cube1.position.set(200, 0, 200);
-        cube1.castShadow = true;
-        cube1.receiveShadow = true;
-        scene.add(cube1);
-        objects.push(cube1);
+        starTexture = new THREE.ImageUtils.loadTexture('/images/stars_512.jpg', {}, function (){
+            renderer.render(scene, camera);
+        });
+        starTexture.wrapS = starTexture.wrapT = THREE.RepeatWrapping;
+        starTexture.repeat.set( 10, 10 );
+        starTexture.needsUpdate = true;
 
-        cube2 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
-        cube2.position.set(-200, 0, 200);
-        cube2.castShadow = true;
-        cube2.receiveShadow = true;
-        scene.add(cube2);
-        objects.push(cube2);
+        variableMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide, transparent: true, opacity: 1.0});
+        var starGeometry = new THREE.SphereGeometry(1000, 32, 32);
+        shell = new THREE.Mesh(starGeometry, variableMaterial);
+        scene.add(shell);
+//        objects.push(shell);
 
-        cube3 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
-        cube3.position.set(200, 0, -200);
-        cube3.castShadow = true;
-        cube3.receiveShadow = true;
-        scene.add(cube3);
-        objects.push(cube3);
+        fixedMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+        globalShell = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), fixedMaterial);
+        scene.add(globalShell);
 
-        cube4 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
-        cube4.position.set(-200, 0, -200);
-        cube4.castShadow = true;
-        cube4.receiveShadow = true;
-        scene.add(cube4);
-        objects.push(cube4);
+        circle_orbit();
+    }
 
-        // just cube in the center, by default it is at 0,0,0 position
-        cube = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 50, 100),
-            new THREE.MeshLambertMaterial({color: 0x0000FF}));            // supply color of the cube
-        cube.castShadow = true;
-        cube.receiveShadow = true;
-        scene.add(cube);
-//    objects.push(cube);
+    function circle_orbit() {
+        var RADIUS = 30; // of spheres
+        var X1 = 32;
+        var X2 = 32;
+        var BUFF_DIST = 4*RADIUS;
+        var total= 51; //change this to any number
 
-        // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
-        floor = new THREE.Mesh(
-            new THREE.PlaneGeometry(500, 500, 10, 10),
-            new THREE.MeshLambertMaterial({color: 0xCEB2B3}));    // color
-        floor.receiveShadow = true;
-        floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
-        floor.position.y = -25;                                   // move it a little, to match bottom of the cube
-        scene.add(floor);
+        var i;
+        var orbit_arr = new Array();
+            for (i = 0; i < 5; i++) {
+                orbit_arr[i] = new Array();
+            }
 
-        // since we will be adding similar walls, we can reuse the geometry and material
-        var wallGeometry = new THREE.PlaneGeometry(500, 500, 10, 10);
-        var wallMaterial = new THREE.MeshPhongMaterial({color: 0xAAFF66});
+        var start = 0;
+        var center, orbit1, orbit2, orbit3, orbit4;
+            center = 1;
+            orbit1 = center+5;
+            orbit2 = orbit1+10;
+            orbit3 = orbit2+15;
+            orbit4 = orbit3+20;         // the max capacity for each orbit
+        var temp_pos_x, temp_pos_y;
 
-        // here is a wall, by default planes are vertical
-        wall1 = new THREE.Mesh(wallGeometry, wallMaterial);
-        wall1.receiveShadow = true;
-        wall1.position.z = -250;                // move it back
-        scene.add(wall1);
+        while (start < total) {
+            //create the orbits
+            if (start < center) {
+                orbit_arr[0][0] = makeSphere();
+                initSphere(orbit_arr[0][0], 0, 0);          // default position -- center
+                start++;
+            }
+            else if (start < orbit1) {
+                i = 0;
+                while (start < orbit1 && start < total) {
+                    orbit_arr[1][i] = makeSphere();
+                    temp_pos_x = position_helper(1, i, 'x', BUFF_DIST);
+                    temp_pos_y = position_helper(1, i, 'y', BUFF_DIST);
+                    initSphere(orbit_arr[1][i], temp_pos_x, temp_pos_y);
+                    i++;
+                    start++;
+                }
+            }
+            else if (start < orbit2) {
+                i = 0;
+                while (start < orbit2 && start < total) {
+                    orbit_arr[2][i] = makeSphere();
+                    temp_pos_x = position_helper(2, i, 'x', BUFF_DIST);
+                    temp_pos_y = position_helper(2, i, 'y', BUFF_DIST);
+                    initSphere(orbit_arr[2][i], temp_pos_x, temp_pos_y);
+                    i++;
+                    start++;
+                }
+            }
+            else if (start < orbit3) {
+                i = 0;
+                while (start < orbit3 && start < total) {
+                    orbit_arr[3][i] = makeSphere();
+                    temp_pos_x = position_helper(3, i, 'x', BUFF_DIST);
+                    temp_pos_y = position_helper(3, i, 'y', BUFF_DIST);
+                    initSphere(orbit_arr[3][i], temp_pos_x, temp_pos_y);
+                    i++;
+                    start++;
+                }
+            }
+            else if (start < orbit4) {
+                i = 0;
+                while (start < orbit4 && start < total) {
+                    orbit_arr[4][i] = makeSphere();
+                    temp_pos_x = position_helper(4, i, 'x', BUFF_DIST);
+                    temp_pos_y = position_helper(4, i, 'y', BUFF_DIST);
+                    initSphere(orbit_arr[4][i], temp_pos_x, temp_pos_y);
+                    i++;
+                    start++;
+                }
+            }
+        }
 
-        // here is a wall, by default planes are vertical
-        wall2 = new THREE.Mesh(wallGeometry, wallMaterial);
-        wall2.receiveShadow = true;
-        wall2.rotation.y = Math.PI / 2;         // rotate to get perpendicular wall
-        wall2.position.x = -250;                // move it left
-        scene.add(wall2);
+        function makeSphere() {
+            var sphereMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+            var ret = new THREE.Mesh(
+                new THREE.SphereGeometry(RADIUS, X1, X2), sphereMaterial);
+            return ret;
+        }
 
-        // here is a wall, by default planes are vertical
-        wall3 = new THREE.Mesh(wallGeometry, wallMaterial);
-        wall3.position.x = 250;                 // move it right
-        wall3.rotation.y = -Math.PI / 2;       // rotate to get perpendicular wall
-        wall3.receiveShadow = true;
-        scene.add(wall3);
+        function initSphere(elem, pos_x, pos_y) {
+            elem.position.set(pos_x, 0, pos_y);         // set position by params
+            elem.castShadow = true;
+            elem.receiveShadow = true;
+            scene.add(elem);
+            objects.push(elem);                         // make click-able
+        }
 
-        // here is a wall, by default planes are vertical
-        wall4 = new THREE.Mesh(wallGeometry, wallMaterial);
-        wall4.position.z = 250;                 // move it front
-        wall4.rotation.y = Math.PI;             // rotate it 180 degrees, so the "front" will face towards us,
-        // otherwise we will "look through" the plane
-        wall4.receiveShadow = true;
-        scene.add(wall4);
+        function position_helper(obt, cnt, pos, rad) {
+            var n;
+            switch (obt)
+            {
+                case 1:
+                    n = 5;
+                    break;
+                case 2:
+                    n = 10;
+                    break;
+                case 3:
+                    n = 15;
+                    break;
+                case 4:
+                    n = 20;
+                    break;
+            }
 
-
-        // feel free to add new stuff or change existing and play around with it!
-        // you can comment out scene.add() to remove anything from viewport
+            switch (pos)
+            {
+                case 'x':
+                    return obt*rad*Math.cos(cnt*((2*Math.PI)/n));
+                case 'y':
+                    return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
+            }
+        }
     }
 
 // lights tutorial - there has to be light in the scene
@@ -208,24 +244,9 @@ $(document).ready(function () {
         // main light - we put on top, y = 500
         light = new THREE.SpotLight();
         light.position.set(0, 500, 0);
-        light.intensity = 2.0;
+        light.intensity = 5.0;
         light.castShadow = true;
         scene.add(light);
-
-        // rotating light that will orbit the cube
-        rotatingLight = new THREE.SpotLight();
-        rotatingLight.position.set(100, 75, -100);
-        rotatingLight.castShadow = true;
-        scene.add(rotatingLight);
-    }
-
-// little nice GUI from dat.GUI library
-// we don't need this, but you can experiment with it
-    function initGUI() {
-        gui = new dat.GUI();
-        gui.add(cube.scale, 'x').min(0.1).max(10).step(0.1);
-        gui.add(cube.scale, 'y', 0.1, 10, 0.1);
-        gui.add(cube.scale, 'z', 0.1, 10, 0.1);
     }
 
 // knowing where the center is, and some other non-important stuff
@@ -239,144 +260,86 @@ $(document).ready(function () {
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
-// when we move mouse, this gets called (remember mouse events in class?) - we added listener before
-    function onDocumentMouseMove(event) {
-        mouseX = ( event.clientX - windowHalfX ) / 2;
-        mouseY = ( event.clientY - windowHalfY ) / 2;
-    }
+    function zoomCamera(zoom) {
+        var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
+        projector.unprojectVector(vector, camera);
+        vector.sub(camera.position).normalize();
+        vector.multiplyScalar(20 * zoom);
+        vector.y = 0;
 
+        camera.position.add(vector);
+        cameraTarget.add(vector);
+        light.position.add(vector);
+        light.target.position.add(vector);
+        camera.position.y -= zoom * 10;
+        cameraTarget.y -= zoom * 10;
+        light.position.y -= zoom * 10;
+        light.target.position.y -= zoom * 10;
 
-// function that makes everything move around!
-    function animate(t) {
-        // spin the camera in a circle - before using, comment out the same stuff in render()
-        // camera.position.x = Math.sin(t/1000)*150;
-        // camera.position.y = 150;
-        // camera.position.z = Math.cos(t/1000)*150;
-
-
-        // updating the animation
-        window.requestAnimationFrame(animate, renderer.domElement);
-
-        // show stuff
-        // render();
-    };
-
-    function zoomInCamera() {
-        if (camera.position.distanceTo(target) > 60) {
-            var offset = new THREE.Vector3(0, 0, 0);
-            var dist = camera.position.distanceTo(target);
-            offset.add(camera.position);
-            offset.x += (target.x - camera.position.x) / (dist / 10);
-            offset.y += (target.y - camera.position.y) / (dist / 10);
-            offset.z += (target.z - camera.position.z) / (dist / 10);
-            camera.position = offset;
-            render();
-        }
-
-    }
-
-    function zoomOutCamera() {
-        var offset = new THREE.Vector3(0, 0, 0);
-        var dist = camera.position.distanceTo(target);
-        offset.add(camera.position);
-        offset.x -= (target.x - camera.position.x) / (dist / 10);
-        offset.y -= (target.y - camera.position.y) / (dist / 10);
-        offset.z -= (target.z - camera.position.z) / (dist / 10);
-        camera.position.set(offset.x, offset.y, offset.z);
         render();
     }
 
 // used to show stuff, also updates the camera
     function render() {
-        // horizontal mouse move is used to rotate around center
-        // vertical mouse move is used to move up and down
-        // camera.position.x = Math.sin(mouseX/100)*150;
-        // camera.position.z = Math.cos(mouseX/100)*150;
-        // camera.position.y = 200 + mouseY/2;
-
-
-        // tell camera to look at the center of the scene
-
-        camera.lookAt(target);
-
-
-        // use animation
-        // animate(new Date().getTime());
-
-
-        // you can use vector to tell specific location like this:
-        // camera.lookAt(new THREE.Vector3(0,0,0));
-
-        // finally render the scene, via the camera you specified
+        camera.lookAt(cameraTarget);
         renderer.render(scene, camera);
     }
 
     function rotateCameraLeft() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraRight() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraUp() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
+        cameraTarget = offset;
 
-        camera.lookAt(target);
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraDown() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, -Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
-//function moveCameraForward()
-//{
-//    var offset = new THREE.Vector3(0,0,0);
-//    var dist = camera.position.distanceTo(target);
-//    offset.add(camera.position);
-//    offset.x -= (target.x - camera.position.x) / (dist / 10);
-//    offset.y -= (target.y - camera.position.y) / (dist / 10);
-//    offset.z -= (target.z - camera.position.z) / (dist / 10);
-//    camera.position.set(offset.x, offset.y, offset.z);
-//    render();
-//}
 
-    document.onkeypress = function (event) {
+    $('#viewer').onkeypress = function (event) {
         if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
             return;
         var key = event.keyCode ? event.keyCode : event.which;
@@ -405,8 +368,9 @@ $(document).ready(function () {
             rotateCameraRight();
     }
 
-    function onDocumentMouseDown(event) {
+    $('#viewer').mousedown(function (event){
         event.preventDefault();
+
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
         projector.unprojectVector(vector, camera);
 
@@ -420,31 +384,82 @@ $(document).ready(function () {
             intersects[ 0 ].object.material.color.setHex(Math.random() * 0xffffff);
         }
 
+        dragging = true;
+        prevDrag = vector;
+        prevDrag.y = 0;
+
         render();
+    });
+
+    $('#viewer').mouseup(function (event){
+        dragging = false;
+        prevDrag = null;
+    });
+
+    $('#viewer').mouseout(function (event){
+        dragging = false;
+        prevDrag = null;
+    });
+
+    // when we move mouse, this gets called (remember mouse events in class?) - we added listener before
+    $('#viewer').mousemove(function (event) {
+        mouseX = ( event.clientX - windowHalfX ) / 2;
+        mouseY = ( event.clientY - windowHalfY ) / 2;
+
+        if (dragging)
+        {
+            var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
+            projector.unprojectVector(vector, camera);
+            vector.sub(camera.position).normalize();
+            vector.y = 0;
+
+            var temp = new THREE.Vector3(0,0,0);
+            temp.add(vector);
+
+            vector.sub(prevDrag);
+            vector.multiplyScalar(-400);
+
+            camera.position.add(vector);
+            cameraTarget.add(vector);
+            light.position.add(vector);
+            light.target.position.add(vector);
+
+            prevDrag = temp;
+            render();
+        }
+    });
+
+    function initMouseWheel(){
+        var viewer = document.getElementById('viewer');
+        if (viewer.addEventListener) {
+            // IE9, Chrome, Safari, Opera
+            viewer.addEventListener("mousewheel", MouseWheelHandler, false);
+            // Firefox
+            viewer.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        }
+// IE 6/7/8
+        else viewer.attachEvent("onmousewheel", MouseWheelHandler);
     }
 
+    function MouseWheelHandler(e) {
+        e.preventDefault();
+        // cross-browser wheel delta
+        var e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        zoomCamera(delta*5);
 
-    function jump(object, t) {
-        object.position.y += Math.cos(t) * 25;
+        var distance = camera.position.distanceTo(shell.position);
+        if (distance < 3000 && distance > 999)
+            shell.material.opacity = (distance - 1000) / 2000;
+        else
+            shell.material.opacity = 1.0;
 
+        var index = jQuery.inArray(shell, objects);
+        if (index === -1 && distance > 2600)
+            objects.push(shell);
+        else if (index !== -1 && distance < 2600)
+            delete(objects[index]);
+        render();
+        return false;
     }
-
-    function flyTo(object) {
-        var vector = new THREE.Vector3();
-        vector.add(object.position);
-//    alert(vector.x + " " + vector.y + " " + vector.z);
-//    var dist = target.distanceTo(vector);
-//    while (dist >= 1)
-//    {
-//        target.sub(target.divideScalar(target.length));
-//        target.add(vector.divideScalar(vector.length));
-//        dist = target.distanceTo(vector);
-//        camera.lookAt(target);
-//        render();
-//    }
-
-//    camera.lookAt(new THREE.Vector3(100,100,100));
-//    render();
-    }
-
 });
