@@ -14,9 +14,9 @@ window.onload = function() {
         if(files.length) {
             for (var i = 0; i < files.length; i++){
                 if(data.isDir[i]){
-                    $('#folder_contents').append('<div class = "subfolder" id = "' + files[i] + '"><img src = "../img/folder.png"/><h5>'  + files[i] + '</h5></div>');
+                    $('#folder_contents').append('<div class = "subfolder" id = "' + files[i] + '"><img src = "../images/folder.png"/><h5>'  + files[i] + '</h5></div>');
                 }else{
-                    $('#folder_contents').append('<div class = "subfile" id = "' + files[i] + '"><img src = "../img/text.png"/><h5>'  + files[i] + '</h5></div>');
+                    $('#folder_contents').append('<div class = "subfile" id = "' + files[i] + '"><img src = "../images/text.png"/><h5>'  + files[i] + '</h5></div>');
                 }
             }
             initSubfolder(); //make clickable
