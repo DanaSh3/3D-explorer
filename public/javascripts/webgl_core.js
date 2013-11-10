@@ -21,14 +21,20 @@ $(document).ready(function () {
 // the outer shell of a folder
     var shell;
 
+    var orbit_array = new Array();
+
+// variable for stationary cube in the center
+    var cube;
     var variableMaterial;
 
+    var c_o;
+
+// variable for texture
+    var starTexture;
 //  global shell
     var globalShell;
 
     var fixedMaterial;
-
-    var starTexture;
 
 // main light
     var light, ambientLight;
@@ -40,6 +46,12 @@ $(document).ready(function () {
     var prevDrag;
 
     // initialize and render
+
+    var RADIUS = 12; // of spheres
+    var X1 = 20;
+    var X2 = 20;
+    var BUFF_DIST = 6*RADIUS;
+    var total= 5; //change this to any number
 
     init();
     render();
@@ -112,130 +124,98 @@ $(document).ready(function () {
         var starGeometry = new THREE.SphereGeometry(1000, 32, 32);
         shell = new THREE.Mesh(starGeometry, variableMaterial);
         scene.add(shell);
-//        objects.push(shell);
 
         fixedMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
         globalShell = new THREE.Mesh(new THREE.SphereGeometry(4000, 32, 32), fixedMaterial);
         scene.add(globalShell);
-
-        circle_orbit();
-    }
-
-    function circle_orbit() {
-        var RADIUS = 30; // of spheres
-        var X1 = 32;
-        var X2 = 32;
-        var BUFF_DIST = 4*RADIUS;
-        var total= 51; //change this to any number
-
-        var i;
-        var orbit_arr = new Array();
-            for (i = 0; i < 5; i++) {
-                orbit_arr[i] = new Array();
-            }
-
-        var start = 0;
-        var center, orbit1, orbit2, orbit3, orbit4;
-            center = 1;
-            orbit1 = center+5;
-            orbit2 = orbit1+10;
-            orbit3 = orbit2+15;
-            orbit4 = orbit3+20;         // the max capacity for each orbit
-        var temp_pos_x, temp_pos_y;
-
-        while (start < total) {
-            //create the orbits
-            if (start < center) {
-                orbit_arr[0][0] = makeSphere();
-                initSphere(orbit_arr[0][0], 0, 0);          // default position -- center
-                start++;
-            }
-            else if (start < orbit1) {
-                i = 0;
-                while (start < orbit1 && start < total) {
-                    orbit_arr[1][i] = makeSphere();
-                    temp_pos_x = position_helper(1, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(1, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[1][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
-            else if (start < orbit2) {
-                i = 0;
-                while (start < orbit2 && start < total) {
-                    orbit_arr[2][i] = makeSphere();
-                    temp_pos_x = position_helper(2, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(2, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[2][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
-            else if (start < orbit3) {
-                i = 0;
-                while (start < orbit3 && start < total) {
-                    orbit_arr[3][i] = makeSphere();
-                    temp_pos_x = position_helper(3, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(3, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[3][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
-            else if (start < orbit4) {
-                i = 0;
-                while (start < orbit4 && start < total) {
-                    orbit_arr[4][i] = makeSphere();
-                    temp_pos_x = position_helper(4, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(4, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[4][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
         }
 
-        function makeSphere() {
-            var sphereMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+    function circle_orbit_obj(arr) {
+        var size_count = 0;
+        var orbit_count = 0;
+
+        this.insert = insert;
+        function insert(elem) {
+            if (orbit_count === 0) {
+                arr[0] = [];
+                arr[0][0] = elem;
+                initSphere(elem, 0, 0);
+                orbit_count++;
+            }
+            else{
+                if (arr[orbit_count] === undefined)
+                {
+                    arr[orbit_count] = new Array();
+                    alert("new orbit created!");
+                }
+
+                arr[orbit_count].push(elem);
+                initSphere( elem,
+                    position_helper(orbit_count, arr[orbit_count].length, 'x', BUFF_DIST),
+                    position_helper(orbit_count, arr[orbit_count].length, 'y', BUFF_DIST));
+
+                if(arr[orbit_count].length === orbit_count*5) {
+                    orbit_count++;
+                }
+            }
+            size_count++;
+            alert(size_count);
+        }
+
+        this.remove = remove;
+        function remove() {
+            if(size_count === 0) return;
+            if ( arr[orbit_count] === undefined || arr[orbit_count].length === 0) {
+                arr.pop();
+                orbit_count--;
+            }
+            scene.remove(arr[orbit_count].pop());
+            size_count--;
+        }
+
+        this.getLast = getLast;
+        function getLast() {
+            var ret;
+            if (arr[orbit_count] === undefined) {
+                //ret = arr[orbit_count-1][arr[orbit_count-1].length-1];
+                ret = arr[orbit_count-1].pop();
+                arr[orbit_count-1].push(ret);
+            }
+            else {
+                //ret = arr[orbit_count][arr[orbit_count].length-1];
+                ret = arr[orbit_count].pop();
+                arr[orbit_count].push(ret);
+            }
+            return ret;
+        }
+    }
+
+    function makeSphere() {
             var ret = new THREE.Mesh(
-                new THREE.SphereGeometry(RADIUS, X1, X2), sphereMaterial);
+                new THREE.SphereGeometry(RADIUS, X1, X2),
+                new THREE.MeshLambertMaterial({color: 0xFF0000}));
             return ret;
         }
 
-        function initSphere(elem, pos_x, pos_y) {
-            elem.position.set(pos_x, 0, pos_y);         // set position by params
-            elem.castShadow = true;
-            elem.receiveShadow = true;
-            scene.add(elem);
-            objects.push(elem);                         // make click-able
-        }
+    function initSphere(elem, pos_x, pos_y) {
+        //alert("init! init!");
+        elem.position.set(pos_x, 0, pos_y);         // set position by params
+        elem.castShadow = true;
+        elem.receiveShadow = true;
+        scene.add(elem);
+        objects.push(elem);                         // make click-able
+    }
 
-        function position_helper(obt, cnt, pos, rad) {
-            var n;
-            switch (obt)
-            {
-                case 1:
-                    n = 5;
-                    break;
-                case 2:
-                    n = 10;
-                    break;
-                case 3:
-                    n = 15;
-                    break;
-                case 4:
-                    n = 20;
-                    break;
-            }
+    function position_helper(obt, cnt, pos, rad) { // orbit, count: number in orbit, pos: 'x' or 'y', rad-BUFF_DIST
+        var n;
+        n = obt*5
 
-            switch (pos)
-            {
-                case 'x':
-                    return obt*rad*Math.cos(cnt*((2*Math.PI)/n));
-                case 'y':
-                    return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
-            }
+        switch (pos)
+        {
+            case 'x':
+                return obt*rad*Math.cos(cnt*((2*Math.PI)/n));
+            case 'y':
+                return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
         }
     }
 
@@ -258,6 +238,12 @@ $(document).ready(function () {
         camera.updateProjectionMatrix();
 
         renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+// when we move mouse, this gets called (remember mouse events in class?) - we added listener before
+    function onDocumentMouseMove(event) {
+        mouseX = ( event.clientX - windowHalfX ) / 2;
+        mouseY = ( event.clientY - windowHalfY ) / 2;
     }
 
     function zoomCamera(zoom) {
@@ -338,8 +324,20 @@ $(document).ready(function () {
         render();
     }
 
+    function inc_spheres() {
+        total++;
+        c_o.insert(makeSphere());
+        render();
+    }
+    function dec_spheres() {
+        total--;
+        c_o.remove();
+        render();
+    }
 
-    $('#viewer').onkeypress = function (event) {
+
+    //$('#viewer').onkeypress = function (event) {
+    document.onkeypress = function (event) {
         if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
             return;
         var key = event.keyCode ? event.keyCode : event.which;
@@ -352,6 +350,10 @@ $(document).ready(function () {
             rotateCameraLeft();
         else if (s == 'd')
             rotateCameraRight();
+        else if (s == '=')
+            inc_spheres();
+        else if (s == '-')
+            dec_spheres();
     }
 
     document.onkeydown = function (event) {
@@ -368,7 +370,8 @@ $(document).ready(function () {
             rotateCameraRight();
     }
 
-    $('#viewer').mousedown(function (event){
+    function onDocumentMouseDown(event) {
+
         event.preventDefault();
 
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
