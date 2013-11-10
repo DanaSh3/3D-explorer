@@ -98,3 +98,8 @@
 .errorMessage{
     color: red;
 }
+
+#folder_contents{
+    color: #399966;
+    font-size: larger;
+}
