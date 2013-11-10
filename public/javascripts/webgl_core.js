@@ -9,12 +9,14 @@ $(document).ready(function () {
 
 // important stuff: camera - where to look
     var camera;
+    var cameraTarget;
 
 // important stuff: scene - you add everything to it
     var scene;
 
     var projector;
 
+// for clicking
     var objects;
 
 // variables for moving cube
@@ -24,16 +26,22 @@ $(document).ready(function () {
     var cube;
 
 // make the "room"
-    var floor, wall1, wall2, wall3, wall4;
+    var floor;
+
+// the outer shell of a folder
+    var shell;
+
+//  global shell
+    var globalShell;
 
 // main light
-    var light;
+    var light, ambientLight;
 
 // used when resizing windows and moving mouse, i.e. rotating camera
     var windowHalfX, windowHalfY;
     var mouseX, mouseY;
 
-    var target;
+
 
     // initialize and render
 
@@ -74,7 +82,7 @@ $(document).ready(function () {
         // initializing camera - used to show stuff
         camera = new THREE.PerspectiveCamera(60, $('#viewer').width() / $('#viewer').height(), 1, 10000);       // don't worry about parameters
         camera.position.set(0, 500, 0);
-        target = new THREE.Vector3(0, 0, 100);
+        cameraTarget = new THREE.Vector3(0, 0, 100);
 
         // finally initializing scene - you'll be adding stuff to it
         scene = new THREE.Scene();
@@ -92,6 +100,28 @@ $(document).ready(function () {
     }
 
     function initGeometry() {
+        var starTexture = new THREE.ImageUtils.loadTexture('/images/stars_512.jpg', {}, function (){
+            renderer.render(scene, camera);
+        });
+        starTexture.wrapS = starTexture.wrapT = THREE.RepeatWrapping;
+        starTexture.repeat.set( 10, 10 );
+        starTexture.needsUpdate = true;
+
+        var starMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
+        var starGeometry = new THREE.SphereGeometry(1000, 32, 32);
+        shell = new THREE.Mesh(starGeometry, starMaterial);
+        scene.add(shell);
+
+        // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
+        floor = new THREE.Mesh(
+            new THREE.PlaneGeometry(windowHalfX * 7.5, windowHalfY * 7.5),
+            starMaterial);
+        floor.receiveShadow = true;
+        floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
+        floor.position.y = -1000;                                   // move it a little, to match bottom of the cube
+//        scene.add(floor);
+
+
         cube1 = new THREE.Mesh(
             new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
             new THREE.MeshLambertMaterial({color: 0x000000}));          // supply color of the cube
@@ -137,17 +167,6 @@ $(document).ready(function () {
         scene.add(cube);
 //    objects.push(cube);
 
-        var starTexture = new THREE.ImageUtils.loadTexture('/images/stars.jpg');
-        var starMaterial = new THREE.MeshLambertMaterial({map: starTexture});
-
-        // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
-        floor = new THREE.Mesh(
-            new THREE.PlaneGeometry(windowHalfX * 5, windowHalfY * 5, 10, 10),
-            starMaterial);
-        floor.receiveShadow = true;
-        floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
-        floor.position.y = -500;                                   // move it a little, to match bottom of the cube
-        scene.add(floor);
 
         // since we will be adding similar walls, we can reuse the geometry and material
         var wallGeometry = new THREE.PlaneGeometry(500, 500, 10, 10);
@@ -190,6 +209,9 @@ $(document).ready(function () {
         light.intensity = 2.0;
         light.castShadow = true;
         scene.add(light);
+
+        ambientLight= new THREE.AmbientLight( 0x404040 ); // soft white light
+        scene.add(ambientLight);
     }
 
 // knowing where the center is, and some other non-important stuff
@@ -217,10 +239,12 @@ $(document).ready(function () {
         vector.y = 0;
 
         camera.position.add(vector);
-        target.add(vector);
+        cameraTarget.add(vector);
+        floor.position.add(vector);
         light.position.add(vector);
+        light.target.position.add(vector);
         camera.position.y -= zoom * 10;
-        target.y -= zoom * 10;
+        cameraTarget.y -= zoom * 10;
         floor.position.y -= zoom * 10;
         light.position.y -= zoom * 10;
 
@@ -229,60 +253,60 @@ $(document).ready(function () {
 
 // used to show stuff, also updates the camera
     function render() {
-        camera.lookAt(target);
+        camera.lookAt(cameraTarget);
         renderer.render(scene, camera);
     }
 
     function rotateCameraLeft() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraRight() {
         var offset = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 100);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraUp() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
+        cameraTarget = offset;
 
-        camera.lookAt(target);
+        camera.lookAt(cameraTarget);
         render();
     }
 
     function rotateCameraDown() {
         var offset = new THREE.Vector3(0, 0, 0);
         var rotationAxis = new THREE.Vector3(0, 0, 0);
-        offset.add(target);
+        offset.add(cameraTarget);
         offset.sub(camera.position);
         rotationAxis.crossVectors(offset, new THREE.Vector3(0, 1, 0)).normalize();
         offset.applyAxisAngle(rotationAxis, -Math.PI / 72);
         offset.add(camera.position);
 
-        target = offset;
-        camera.lookAt(target);
+        cameraTarget = offset;
+        camera.lookAt(cameraTarget);
         render();
     }
 
