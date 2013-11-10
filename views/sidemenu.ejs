@@ -6,7 +6,7 @@
         <li><a class="create_directory" href="#">Create Directory</a></li>
         <li id = "directory_name">
 
-            <form align="center">
+            <form id = "file_form" align = "center"> <!-- action = "/create" method = "post" align="center"> -->
                 <fieldset >
                     <legend>Directory Name</legend>
                     <input type="text" id="file_input" placeholder="enter filename">
@@ -14,6 +14,10 @@
                 </fieldset>
             </form>
             <div id="message" align ="center" hidden = true></div>
+            <div id="folder_contents"></div>
+            <div id="delete_div" align = "center">
+                <li><a class="delete_dir" href="#">Delete Directory</a></li>
+            </div>
         </li>
     </ul>
 </div>

@@ -63,3 +63,17 @@ div ul li form {
     display: none;
 }
 
+
+
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    display: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+    font-color: white;
+    background: white;
+}
