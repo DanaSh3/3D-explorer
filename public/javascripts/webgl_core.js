@@ -45,8 +45,8 @@ $(document).ready(function () {
     // initialize and render
 
     var RADIUS = 12; // of spheres
-    var X1 = 50;
-    var X2 = 50;
+    var X1 = 20;
+    var X2 = 20;
     var BUFF_DIST = 6*RADIUS;
     var total= 5; //change this to any number
 
@@ -106,50 +106,50 @@ $(document).ready(function () {
 
     function initGeometry() {
 
-        cube1 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0x000000}));          // supply color of the cube
-        cube1.position.set(200, 0, 200);
-        cube1.castShadow = true;
-        cube1.receiveShadow = true;
-        //scene.add(cube1);
-        objects.push(cube1);
-
-        cube2 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
-        cube2.position.set(-200, 0, 200);
-        cube2.castShadow = true;
-        cube2.receiveShadow = true;
-        //scene.add(cube2);
-        objects.push(cube2);
-
-        cube3 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0x00FF00}));          // supply color of the cube
-        cube3.position.set(200, 0, -200);
-        cube3.castShadow = true;
-        cube3.receiveShadow = true;
-        //scene.add(cube3);
-        objects.push(cube3);
-
-        cube4 = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
-            new THREE.MeshLambertMaterial({color: 0x0000FF}));          // supply color of the cube
-        cube4.position.set(-200, 0, -200);
-        cube4.castShadow = true;
-        cube4.receiveShadow = true;
-        //scene.add(cube4);
-        objects.push(cube4);
-
-        // just cube in the center, by default it is at 0,0,0 position
-        cube = new THREE.Mesh(
-            new THREE.CubeGeometry(25, 50, 100),
-            new THREE.MeshLambertMaterial({color: 0x0000FF}));            // supply color of the cube
-        cube.castShadow = true;
-        cube.receiveShadow = true;
-        //scene.add(cube);
-//    objects.push(cube);
+//        cube1 = new THREE.Mesh(
+//            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
+//            new THREE.MeshLambertMaterial({color: 0x000000}));          // supply color of the cube
+//        cube1.position.set(200, 0, 200);
+//        cube1.castShadow = true;
+//        cube1.receiveShadow = true;
+//        //scene.add(cube1);
+//        objects.push(cube1);
+//
+//        cube2 = new THREE.Mesh(
+//            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
+//            new THREE.MeshLambertMaterial({color: 0xFF0000}));          // supply color of the cube
+//        cube2.position.set(-200, 0, 200);
+//        cube2.castShadow = true;
+//        cube2.receiveShadow = true;
+//        //scene.add(cube2);
+//        objects.push(cube2);
+//
+//        cube3 = new THREE.Mesh(
+//            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
+//            new THREE.MeshLambertMaterial({color: 0x00FF00}));          // supply color of the cube
+//        cube3.position.set(200, 0, -200);
+//        cube3.castShadow = true;
+//        cube3.receiveShadow = true;
+//        //scene.add(cube3);
+//        objects.push(cube3);
+//
+//        cube4 = new THREE.Mesh(
+//            new THREE.CubeGeometry(25, 25, 25),                           // supply size of the cube
+//            new THREE.MeshLambertMaterial({color: 0x0000FF}));          // supply color of the cube
+//        cube4.position.set(-200, 0, -200);
+//        cube4.castShadow = true;
+//        cube4.receiveShadow = true;
+//        //scene.add(cube4);
+//        objects.push(cube4);
+//
+//        // just cube in the center, by default it is at 0,0,0 position
+//        cube = new THREE.Mesh(
+//            new THREE.CubeGeometry(25, 50, 100),
+//            new THREE.MeshLambertMaterial({color: 0x0000FF}));            // supply color of the cube
+//        cube.castShadow = true;
+//        cube.receiveShadow = true;
+//        //scene.add(cube);
+////    objects.push(cube);
 
         starTexture = new THREE.ImageUtils.loadTexture('/images/starry-64.jpg', {}, function () {
             renderer.render(scene, camera);
@@ -201,106 +201,73 @@ $(document).ready(function () {
 
             //squarifyed_array();
 
-//        orbit_arr = new Array();
-//        for (i = 0; i < 5; i++) {
-//            orbit_arr[i] = new Array();
-//        }
-//
-//            circle_orbit();
-
             c_o = new circle_orbit_obj(orbit_array);
                 for (var a = 0; a < total; a++) {
-                    alert(orbit_array.length);
+                    //alert(orbit_array.length);
                     c_o.insert(makeSphere());
-                    //initSphere(c_o.getLast(), position_helper() , );
                 }
         }
 
 
-    function squarifyed_array () {
-
-        var RADIUS = 12;
-        var X1 = 50;
-        var X2 = 50;
-        var BUFFDIST = 2*RADIUS;
-        var total= 2; //chane this to any number
-
-
-
-        var n = Math.floor( Math.sqrt(total) );
-        alert(n);
-        var width = n;
-        var height = n;
-        var diff = total - n*n;
-
-        alert(diff);
-        if (diff === 0) {}
-        else if (diff <= n) { width++; }
-        else if (diff > n) { width++;
-            height++; }
-
-        var grid_width = (2*BUFFDIST) * width;
-        var grid_height = (2*BUFFDIST) * height;
-
-        var i, j;
-
-        spheres = new Array();
-        for (i = 0; i <= width; i++) {
-            spheres[i] = new Array();
-        }
-
-        var init_pos_x = -grid_width/2 + BUFFDIST;
-        var init_pos_y = -grid_height/2 + BUFFDIST;
-        var count = 0;
-        for (i = 0; i < width; i++) {
-            if (count === total) break;
-            for (j = 0; j < height; j++) {
-                if (count === total) break;
-                spheres[i][j] = new THREE.Mesh(
-                    new THREE.SphereGeometry(RADIUS, X1, X2),                           // supply size of the cube
-                    new THREE.MeshLambertMaterial({color: 0xFF0000}));
-                spheres[i][j].position.set(init_pos_x, 0, init_pos_y);
-                // spheres[i][j].position.set(i * 100, 50, j * 100);
-                spheres[i][j].castShadow = true;
-                spheres[i][j].receiveShadow = true;
-                scene.add(spheres[i][j]);
-                objects.push(spheres[i][j]);
-                count ++;
-                //arr[i][j] = ("pos_x: " +init_pos_x+ ", pos_y: " + init_pos_y);
-                init_pos_y += (2*BUFFDIST);
-            }
-            init_pos_y = -grid_height/2 + BUFFDIST;
-            init_pos_x += (2*BUFFDIST);
-        }
-    }
-
-//    var circle_orbit_obj = {
-//        orbit_count : 0,
-//        arr : orbit_arr
-//    };
+//    function squarifyed_array () {
 //
-//    function circle_orbit_insert(elem) {
-//        if (circle_orbit_obj.orbit_count === 0) {
-//            circle_orbit_obj.arr[0][0] = elem;
-//            circle_orbit_obj.orbit_count++;
+//        var RADIUS = 12;
+//        var X1 = 50;
+//        var X2 = 50;
+//        var BUFFDIST = 2*RADIUS;
+//        var total= 2; //chane this to any number
+//
+//
+//
+//        var n = Math.floor( Math.sqrt(total) );
+//        alert(n);
+//        var width = n;
+//        var height = n;
+//        var diff = total - n*n;
+//
+//        alert(diff);
+//        if (diff === 0) {}
+//        else if (diff <= n) { width++; }
+//        else if (diff > n) { width++;
+//            height++; }
+//
+//        var grid_width = (2*BUFFDIST) * width;
+//        var grid_height = (2*BUFFDIST) * height;
+//
+//        var i, j;
+//
+//        spheres = new Array();
+//        for (i = 0; i <= width; i++) {
+//            spheres[i] = new Array();
 //        }
-//        else {
-//            if (circle_orbit_obj.arr[circle_orbit_obj.o])
-//            circle_orbit_obj.arr[circle_orbit_obj.orbit_count][]
+//
+//        var init_pos_x = -grid_width/2 + BUFFDIST;
+//        var init_pos_y = -grid_height/2 + BUFFDIST;
+//        var count = 0;
+//        for (i = 0; i < width; i++) {
+//            if (count === total) break;
+//            for (j = 0; j < height; j++) {
+//                if (count === total) break;
+//                spheres[i][j] = new THREE.Mesh(
+//                    new THREE.SphereGeometry(RADIUS, X1, X2),                           // supply size of the cube
+//                    new THREE.MeshLambertMaterial({color: 0xFF0000}));
+//                spheres[i][j].position.set(init_pos_x, 0, init_pos_y);
+//                // spheres[i][j].position.set(i * 100, 50, j * 100);
+//                spheres[i][j].castShadow = true;
+//                spheres[i][j].receiveShadow = true;
+//                scene.add(spheres[i][j]);
+//                objects.push(spheres[i][j]);
+//                count ++;
+//                init_pos_y += (2*BUFFDIST);
+//            }
+//            init_pos_y = -grid_height/2 + BUFFDIST;
+//            init_pos_x += (2*BUFFDIST);
 //        }
 //    }
 
     function circle_orbit_obj(arr) {
         var size_count = 0;
         var orbit_count = 0;
-        //this.arr = arr;
-        // var arr = new Array();
-//            arr = new Array();
-//            for (i = 0; i < 5; i++) {
-//                arr[i] = new Array();
-//            }
-
-        //var last = undefined;
 
         this.insert = insert;
         function insert(elem) {
@@ -332,11 +299,13 @@ $(document).ready(function () {
 
         this.remove = remove;
         function remove() {
+            if(size_count === 0) return;
             if ( arr[orbit_count] === undefined || arr[orbit_count].length === 0) {
                 arr.pop();
                 orbit_count--;
             }
             scene.remove(arr[orbit_count].pop());
+            size_count--;
         }
 
         this.getLast = getLast;
@@ -583,7 +552,8 @@ $(document).ready(function () {
     }
 
 
-    $('#viewer').onkeypress = function (event) {
+    //$('#viewer').onkeypress = function (event) {
+    document.onkeypress = function (event) {
         if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
             return;
         var key = event.keyCode ? event.keyCode : event.which;
@@ -596,6 +566,10 @@ $(document).ready(function () {
             rotateCameraLeft();
         else if (s == 'd')
             rotateCameraRight();
+        else if (s == '=')
+            inc_spheres();
+        else if (s == '-')
+            dec_spheres();
     }
 
     document.onkeydown = function (event) {
