@@ -20,8 +20,12 @@ $(document).ready(function () {
 // variables for moving cube
     var cube1, cube2, cube3, cube4;
 
+    var orbit_array = new Array();
+
 // variable for stationary cube in the center
     var cube;
+
+    var c_o;
 
 // variable for texture
     var starTexture;
@@ -39,6 +43,12 @@ $(document).ready(function () {
     var target;
 
     // initialize and render
+
+    var RADIUS = 12; // of spheres
+    var X1 = 50;
+    var X2 = 50;
+    var BUFF_DIST = 6*RADIUS;
+    var total= 5; //change this to any number
 
     init();
     render();
@@ -190,7 +200,20 @@ $(document).ready(function () {
 //        scene.add(wall4);
 
             //squarifyed_array();
-            circle_orbit();
+
+//        orbit_arr = new Array();
+//        for (i = 0; i < 5; i++) {
+//            orbit_arr[i] = new Array();
+//        }
+//
+//            circle_orbit();
+
+            c_o = new circle_orbit_obj(orbit_array);
+                for (var a = 0; a < total; a++) {
+                    alert(orbit_array.length);
+                    c_o.insert(makeSphere());
+                    //initSphere(c_o.getLast(), position_helper() , );
+                }
         }
 
 
@@ -200,7 +223,7 @@ $(document).ready(function () {
         var X1 = 50;
         var X2 = 50;
         var BUFFDIST = 2*RADIUS;
-        var total= 7; //chane this to any number
+        var total= 2; //chane this to any number
 
 
 
@@ -251,121 +274,196 @@ $(document).ready(function () {
         }
     }
 
-    function circle_orbit() {
-        var RADIUS = 12; // of spheres
-        var X1 = 50;
-        var X2 = 50;
-        var BUFF_DIST = 6*RADIUS;
-        var total= 38; //change this to any number
+//    var circle_orbit_obj = {
+//        orbit_count : 0,
+//        arr : orbit_arr
+//    };
+//
+//    function circle_orbit_insert(elem) {
+//        if (circle_orbit_obj.orbit_count === 0) {
+//            circle_orbit_obj.arr[0][0] = elem;
+//            circle_orbit_obj.orbit_count++;
+//        }
+//        else {
+//            if (circle_orbit_obj.arr[circle_orbit_obj.o])
+//            circle_orbit_obj.arr[circle_orbit_obj.orbit_count][]
+//        }
+//    }
 
-        var i;
-        var orbit_arr = new Array();
-            for (i = 0; i < 5; i++) {
-                orbit_arr[i] = new Array();
-            }
+    function circle_orbit_obj(arr) {
+        var size_count = 0;
+        var orbit_count = 0;
+        //this.arr = arr;
+        // var arr = new Array();
+//            arr = new Array();
+//            for (i = 0; i < 5; i++) {
+//                arr[i] = new Array();
+//            }
 
-        var start = 0;
-        var center, orbit1, orbit2, orbit3, orbit4;
-            center = 1;
-            orbit1 = center+5;
-            orbit2 = orbit1+10;
-            orbit3 = orbit2+15;
-            orbit4 = orbit3+20;         // the max capacity for each orbit
-        var temp_pos_x, temp_pos_y;
+        //var last = undefined;
 
-        while (start < total) {
-            //create the orbits
-            if (start < center) {
-                orbit_arr[0][0] = makeSphere();
-                initSphere(orbit_arr[0][0], 0, 0);          // default position -- center
-                start++;
+        this.insert = insert;
+        function insert(elem) {
+            if (orbit_count === 0) {
+                arr[0] = [];
+                arr[0][0] = elem;
+                initSphere(elem, 0, 0);
+                orbit_count++;
             }
-            else if (start < orbit1) {
-                i = 0;
-                while (start < orbit1 && start < total) {
-                    orbit_arr[1][i] = makeSphere();
-                    temp_pos_x = position_helper(1, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(1, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[1][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
+            else{
+                if (arr[orbit_count] === undefined)
+                {
+                    arr[orbit_count] = new Array();
+                    alert("new orbit created!");
+                }
+
+                arr[orbit_count].push(elem);
+                initSphere( elem,
+                            position_helper(orbit_count, arr[orbit_count].length, 'x', BUFF_DIST),
+                            position_helper(orbit_count, arr[orbit_count].length, 'y', BUFF_DIST));
+
+                if(arr[orbit_count].length === orbit_count*5) {
+                    orbit_count++;
                 }
             }
-            else if (start < orbit2) {
-                i = 0;
-                while (start < orbit2 && start < total) {
-                    orbit_arr[2][i] = makeSphere();
-                    temp_pos_x = position_helper(2, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(2, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[2][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
-            else if (start < orbit3) {
-                i = 0;
-                while (start < orbit3 && start < total) {
-                    orbit_arr[3][i] = makeSphere();
-                    temp_pos_x = position_helper(3, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(3, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[3][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
-            else if (start < orbit4) {
-                i = 0;
-                while (start < orbit4 && start < total) {
-                    orbit_arr[4][i] = makeSphere();
-                    temp_pos_x = position_helper(4, i, 'x', BUFF_DIST);
-                    temp_pos_y = position_helper(4, i, 'y', BUFF_DIST);
-                    initSphere(orbit_arr[4][i], temp_pos_x, temp_pos_y);
-                    i++;
-                    start++;
-                }
-            }
+            size_count++;
+            alert(size_count);
         }
 
-        function makeSphere() {
-            var ret = new THREE.Mesh(
-                new THREE.SphereGeometry(RADIUS, X1, X2),
-                new THREE.MeshLambertMaterial({color: 0xFF0000}));
+        this.remove = remove;
+        function remove() {
+            if ( arr[orbit_count] === undefined || arr[orbit_count].length === 0) {
+                arr.pop();
+                orbit_count--;
+            }
+            scene.remove(arr[orbit_count].pop());
+        }
+
+        this.getLast = getLast;
+        function getLast() {
+            var ret;
+            if (arr[orbit_count] === undefined) {
+                //ret = arr[orbit_count-1][arr[orbit_count-1].length-1];
+                ret = arr[orbit_count-1].pop();
+                arr[orbit_count-1].push(ret);
+            }
+            else {
+                //ret = arr[orbit_count][arr[orbit_count].length-1];
+                ret = arr[orbit_count].pop();
+                arr[orbit_count].push(ret);
+            }
             return ret;
         }
+    }
 
-        function initSphere(elem, pos_x, pos_y) {
-            elem.position.set(pos_x, 0, pos_y);         // set position by params
-            elem.castShadow = true;
-            elem.receiveShadow = true;
-            scene.add(elem);
-            objects.push(elem);                         // make click-able
-        }
+//    function circle_orbit() {
+//        //var RADIUS = 12; // of spheres                //moved up scope
+////        var X1 = 50;
+////        var X2 = 50;
+////        var BUFF_DIST = 6*RADIUS;
+//        //var total= 45; //change this to any number    //moved up scope
+//
+//        var i;
+//
+////        if (orbit_arr.length !== 0) { orbit_arr = new Array();
+////            for (i = 0; i < 5; i++) {
+////                orbit_arr[i] = new Array();
+////            } }
+//
+//        var start = 0;
+//        var center;
+//        var orbit = new Array();
+//        var orbit1, orbit2, orbit3, orbit4;
+//            center = 1;
+//            orbit1 = center+5;
+//            orbit2 = orbit1+10;
+//            orbit3 = orbit2+15;
+//            orbit4 = orbit3+20;         // the max capacity for each orbit
+//        var temp_pos_x, temp_pos_y;
+//
+//        while (start < total) {
+//            //create the orbits
+//            if (start < center) {
+//                orbit_arr[0][0] = makeSphere();
+//                initSphere(orbit_arr[0][0], 0, 0);          // default position -- center
+//                start++;
+//            }
+//            else if (start < orbit1) {
+//                i = 0;
+//                while (start < orbit1 && start < total) {
+//                    orbit_arr[1][i] = makeSphere();
+//                    temp_pos_x = position_helper(1, i, 'x', BUFF_DIST);
+//                    temp_pos_y = position_helper(1, i, 'y', BUFF_DIST);
+//                    initSphere(orbit_arr[1][i], temp_pos_x, temp_pos_y);
+//                    i++;
+//                    start++;
+//                }
+//            }
+//            else if (start < orbit2) {
+//                i = 0;
+//                while (start < orbit2 && start < total) {
+//                    orbit_arr[2][i] = makeSphere();
+//                    temp_pos_x = position_helper(2, i, 'x', BUFF_DIST);
+//                    temp_pos_y = position_helper(2, i, 'y', BUFF_DIST);
+//                    initSphere(orbit_arr[2][i], temp_pos_x, temp_pos_y);
+//                    i++;
+//                    start++;
+//                }
+//            }
+//            else if (start < orbit3) {
+//                i = 0;
+//                while (start < orbit3 && start < total) {
+//                    orbit_arr[3][i] = makeSphere();
+//                    temp_pos_x = position_helper(3, i, 'x', BUFF_DIST);
+//                    temp_pos_y = position_helper(3, i, 'y', BUFF_DIST);
+//                    initSphere(orbit_arr[3][i], temp_pos_x, temp_pos_y);
+//                    i++;
+//                    start++;
+//                }
+//            }
+//            else if (start < orbit4) {
+//                i = 0;
+//                while (start < orbit4 && start < total) {
+//                    orbit_arr[4][i] = makeSphere();
+//                    temp_pos_x = position_helper(4, i, 'x', BUFF_DIST);
+//                    temp_pos_y = position_helper(4, i, 'y', BUFF_DIST);
+//                    initSphere(orbit_arr[4][i], temp_pos_x, temp_pos_y);
+//                    i++;
+//                    start++;
+//                }
+//            }
+//        }
+//
+//
+//    }
 
-        function position_helper(obt, cnt, pos, rad) {
-            var n;
-            switch (obt)
-            {
-                case 1:
-                    n = 5;
-                    break;
-                case 2:
-                    n = 10;
-                    break;
-                case 3:
-                    n = 15;
-                    break;
-                case 4:
-                    n = 20;
-                    break;
-            }
+    function makeSphere() {
+        //alert("making sphere~~~");
+        var ret = new THREE.Mesh(
+            new THREE.SphereGeometry(RADIUS, X1, X2),
+            new THREE.MeshLambertMaterial({color: 0xFF0000}));
+        return ret;
+    }
 
-            switch (pos)
-            {
-                case 'x':
-                    return obt*rad*Math.cos(cnt*((2*Math.PI)/n));
-                case 'y':
-                    return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
-            }
+    function initSphere(elem, pos_x, pos_y) {
+        //alert("init! init!");
+        elem.position.set(pos_x, 0, pos_y);         // set position by params
+        elem.castShadow = true;
+        elem.receiveShadow = true;
+        scene.add(elem);
+        objects.push(elem);                         // make click-able
+    }
+
+    function position_helper(obt, cnt, pos, rad) { // orbit, count: number in orbit, pos: 'x' or 'y', rad-BUFF_DIST
+        var n;
+        n = obt*5
+
+        switch (pos)
+        {
+            case 'x':
+                return obt*rad*Math.cos(cnt*((2*Math.PI)/n));
+            case 'y':
+                return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
         }
     }
 
@@ -473,6 +571,17 @@ $(document).ready(function () {
         render();
     }
 
+    function inc_spheres() {
+        total++;
+        c_o.insert(makeSphere());
+        render();
+    }
+    function dec_spheres() {
+        total--;
+        c_o.remove();
+        render();
+    }
+
 
     $('#viewer').onkeypress = function (event) {
         if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
@@ -493,10 +602,10 @@ $(document).ready(function () {
         if ($(':focus').length > 0) //this indicates we are in a DOM object which can request focus (i.e. not in viewer or other div)
             return;
         var key = event.keyCode ? event.keyCode : event.which;
-        if (key == 38)
-            rotateCameraUp();
-        else if (key == 40)
-            rotateCameraDown();
+        if (key == 38) { inc_spheres(); }
+            //rotateCameraUp();
+        else if (key == 40) { dec_spheres(); }
+            //rotateCameraDown();
         else if (key == 37)
             rotateCameraLeft();
         else if (key == 39)
@@ -505,7 +614,10 @@ $(document).ready(function () {
 
     function onDocumentMouseDown(event) {
 
-        event.preventDefault();
+        $(function(){
+            $(event).preventDefault();
+
+        } );
 
         var vector = new THREE.Vector3(( event.clientX / window.innerWidth ) * 2 - 1, -( event.clientY / window.innerHeight ) * 2 + 1, 0.5);
         projector.unprojectVector(vector, camera);
