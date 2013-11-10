@@ -29,7 +29,7 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/3dexplorer', routes.index);
+app.get('/', routes.index);
 
 var io = require('socket.io').listen(app.listen(app.get('port')));
 
