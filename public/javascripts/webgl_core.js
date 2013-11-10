@@ -23,6 +23,9 @@ $(document).ready(function () {
 // variable for stationary cube in the center
     var cube;
 
+// variable for texture
+    var starTexture;
+
 // make the "room"
     var floor, wall1, wall2, wall3, wall4;
 
@@ -137,49 +140,111 @@ $(document).ready(function () {
         scene.add(cube);
 //    objects.push(cube);
 
-        var starTexture = new THREE.ImageUtils.loadTexture('/images/stars.jpg');
-        var starMaterial = new THREE.MeshLambertMaterial({map: starTexture});
+        starTexture = new THREE.ImageUtils.loadTexture('/images/stary-rep-square-clouds.jpg', {}, function () {
+            renderer.render(scene, camera);
+        });
+            var starMaterial = new THREE.MeshLambertMaterial({map: starTexture});
 
-        // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
-        floor = new THREE.Mesh(
-            new THREE.PlaneGeometry(windowHalfX * 5, windowHalfY * 5, 10, 10),
-            starMaterial);
-        floor.receiveShadow = true;
-        floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
-        floor.position.y = -500;                                   // move it a little, to match bottom of the cube
-        scene.add(floor);
+            // making a floor - just a plane 500x500, with 10 width/height segments - they affect lightning/reflection I believe
+            floor = new THREE.Mesh(
+                new THREE.PlaneGeometry(windowHalfX * 5, windowHalfY * 5, 10, 10),
+                starMaterial);
+            floor.receiveShadow = true;
+            floor.rotation.x = -Math.PI / 2;                    // make it horizontal, by default planes are vertical
+            floor.position.y = -500;                                   // move it a little, to match bottom of the cube
+            scene.add(floor);
 
-        // since we will be adding similar walls, we can reuse the geometry and material
-        var wallGeometry = new THREE.PlaneGeometry(500, 500, 10, 10);
-        var wallMaterial = new THREE.MeshPhongMaterial({color: 0xAAFF66});
+            // since we will be adding similar walls, we can reuse the geometry and material
+            var wallGeometry = new THREE.PlaneGeometry(500, 500, 10, 10);
+            var wallMaterial = new THREE.MeshPhongMaterial({color: 0xAAFF66});
 
-        // here is a wall, by default planes are vertical
-        wall1 = new THREE.Mesh(wallGeometry, starMaterial);
-        wall1.receiveShadow = true;
-        wall1.position.z = -250;                // move it back
+            // here is a wall, by default planes are vertical
+            wall1 = new THREE.Mesh(wallGeometry, starMaterial);
+            wall1.receiveShadow = true;
+            wall1.position.z = -250;                // move it back
 //        scene.add(wall1);
 
-        // here is a wall, by default planes are vertical
-        wall2 = new THREE.Mesh(wallGeometry, starMaterial);
-        wall2.receiveShadow = true;
-        wall2.rotation.y = Math.PI / 2;         // rotate to get perpendicular wall
-        wall2.position.x = -250;                // move it left
+            // here is a wall, by default planes are vertical
+            wall2 = new THREE.Mesh(wallGeometry, starMaterial);
+            wall2.receiveShadow = true;
+            wall2.rotation.y = Math.PI / 2;         // rotate to get perpendicular wall
+            wall2.position.x = -250;                // move it left
 //        scene.add(wall2);
 
-        // here is a wall, by default planes are vertical
-        wall3 = new THREE.Mesh(wallGeometry, starMaterial);
-        wall3.position.x = 250;                 // move it right
-        wall3.rotation.y = -Math.PI / 2;       // rotate to get perpendicular wall
-        wall3.receiveShadow = true;
+            // here is a wall, by default planes are vertical
+            wall3 = new THREE.Mesh(wallGeometry, starMaterial);
+            wall3.position.x = 250;                 // move it right
+            wall3.rotation.y = -Math.PI / 2;       // rotate to get perpendicular wall
+            wall3.receiveShadow = true;
 //        scene.add(wall3);
 
-        // here is a wall, by default planes are vertical
-        wall4 = new THREE.Mesh(wallGeometry, starMaterial);
-        wall4.position.z = 250;                 // move it front
-        wall4.rotation.y = Math.PI;             // rotate it 180 degrees, so the "front" will face towards us,
-        // otherwise we will "look through" the plane
-        wall4.receiveShadow = true;
+            // here is a wall, by default planes are vertical
+            wall4 = new THREE.Mesh(wallGeometry, starMaterial);
+            wall4.position.z = 250;                 // move it front
+            wall4.rotation.y = Math.PI;             // rotate it 180 degrees, so the "front" will face towards us,
+            // otherwise we will "look through" the plane
+            wall4.receiveShadow = true;
 //        scene.add(wall4);
+
+            squarifyed_array();
+        }
+
+
+    function squarifyed_array () {
+
+        var RADIUS = 12;
+        var X1 = 50;
+        var X2 = 50;
+        var BUFFDIST = 2*RADIUS;
+        var total= 7; //chane this to any number
+
+
+
+        var n = Math.floor( Math.sqrt(total) );
+        alert(n);
+        var width = n;
+        var height = n;
+        var diff = total - n*n;
+
+        alert(diff);
+        if (diff === 0) {}
+        else if (diff <= n) { width++; }
+        else if (diff > n) { width++;
+            height++; }
+
+        var grid_width = (2*BUFFDIST) * width;
+        var grid_height = (2*BUFFDIST) * height;
+
+        var i, j;
+
+        spheres = new Array();
+        for (i = 0; i <= width; i++) {
+            spheres[i] = new Array();
+        }
+
+        var init_pos_x = -grid_width/2 + BUFFDIST;
+        var init_pos_y = -grid_height/2 + BUFFDIST;
+        var count = 0;
+        for (i = 0; i < width; i++) {
+            if (count === total) break;
+            for (j = 0; j < height; j++) {
+                if (count === total) break;
+                spheres[i][j] = new THREE.Mesh(
+                    new THREE.SphereGeometry(RADIUS, X1, X2),                           // supply size of the cube
+                    new THREE.MeshLambertMaterial({color: 0xFF0000}));
+                spheres[i][j].position.set(init_pos_x, 0, init_pos_y);
+                // spheres[i][j].position.set(i * 100, 50, j * 100);
+                spheres[i][j].castShadow = true;
+                spheres[i][j].receiveShadow = true;
+                scene.add(spheres[i][j]);
+                objects.push(spheres[i][j]);
+                count ++;
+                //arr[i][j] = ("pos_x: " +init_pos_x+ ", pos_y: " + init_pos_y);
+                init_pos_y += (2*BUFFDIST);
+            }
+            init_pos_y = -grid_height/2 + BUFFDIST;
+            init_pos_x += (2*BUFFDIST);
+        }
     }
 
 // lights tutorial - there has to be light in the scene
