@@ -41,9 +41,7 @@ io.sockets.on('connection', function (socket) {
     console.log("Web Socket Connection Established");
     //MAKE DIRECTORY
     socket.on('mkdir', function (data) {
-        var path = String(data.dir);
-        path = path.replace(/\//g, '\\');
-        path = __dirname + "\\public" + path;
+        var path = getPath(data.dir);
         data.isError = false;
         if (file_exists(path)){
             data.status = data.dir + " already exists";
@@ -61,23 +59,38 @@ io.sockets.on('connection', function (socket) {
     });
     //SHOW DIRECTORY
     socket.on('showdir', function(data){
-        var path = String(data.dir);
-        path = path.replace(/\//g, '\\');
-        path = __dirname + "\\public" + path;
+        var path = getPath(data.dir);
+        if (!file_exists(path)){
+            return;
+        }
+        if (!fs.lstatSync(path).isDirectory()){
+            return;
+        }
         var files = fs.readdirSync(path);
+
+        var isDir = [];
+        //check each file/folder to determine if directory
+        for (var i = 0; i < files.length; i++){
+            isDir[i] = fs.lstatSync(path + "/" + files[i]).isDirectory();
+        }
         data.files = files;
+        data.isDir = isDir;
         io.sockets.emit('showfiles', data);
     });
-    //DELETE FOLDER/FILE
-    socket.on('deletedir', function(data){
-        var path = String(data.dir);
+    function getPath(filename){
+        var path = String(filename);
         path = path.replace(/\//g, '\\');
         path = __dirname + "\\public" + path;
+        return path;
+    }
+    //DELETE FOLDER/FILE
+    socket.on('deletedir', function(data){
+        var path = getPath(data.dir);
         deleteFolder(path);
         data.isError = false;
         data.status = "Deleted " + data.dir;
         socket.emit('status', data);
-    })
+    });
     //DOES FILE EXIST?
     function file_exists(file){
         return fs.existsSync(file);

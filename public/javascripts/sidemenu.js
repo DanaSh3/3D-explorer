@@ -11,14 +11,17 @@ window.onload = function() {
     socket.on('showfiles', function (data) {
         var files = data.files;
         $('#folder_contents').html(''); //clear display
-        if(files) {
-            //$('#folder_contents').append('<div class = "subfolder" id = "' + files[i] + '">' + files[i] + '</div>');
+        if(files.length) {
             for (var i = 0; i < files.length; i++){
-                $('#folder_contents').append('<div class = "subfolder" id = "' + files[i] + '">' + files[i] + '</div>');
+                if(data.isDir[i]){
+                    $('#folder_contents').append('<div class = "subfolder" id = "' + files[i] + '"><img src = "../images/folder.png"/><h5>'  + files[i] + '</h5></div>');
+                }else{
+                    $('#folder_contents').append('<div class = "subfile" id = "' + files[i] + '"><img src = "../images/text.png"/><h5>'  + files[i] + '</h5></div>');
+                }
             }
             initSubfolder(); //make clickable
          } else {
-            console.log("There is a problem:", data);
+            $('#folder_contents').append("<div>No Available Files/Folders</div>");
          }
     });
     //display status msg
@@ -44,15 +47,17 @@ function initClick(){
     //if the user clicks on a node, navigate to that folder:
     $('.h_node').click(function(e){
         navigate(this);
+        e.preventDefault(); //in case the user right-clicks
     });
     //show subfolders of the current folder:
     showSubfolders($('.h_node').last().attr('id'));
+    rightClick();
 }
 
 /****************************************DISPLAY FOLDERS/FILES********************************************/
 
 function navigate(node){
-    var path = node.id;
+    var path = node.id + "/";
     $('[id*="' + path + '"]').each(function(){
         if (this !== node)
             this.remove();
@@ -91,12 +96,7 @@ var createDir = function(){
 };
 
 //delete the current directory
-var deleteDir = function(){
-    if ($('.h_node').length == 1){
-        statusMessage("Cannot delete HOME", true);
-        return;
-    }
-    var path = $('.h_node').last().attr('id');
+var deleteDir = function(path){
     socket.emit('deletedir', { dir: path });
 };
 
@@ -106,13 +106,6 @@ var deleteDir = function(){
 $("#createDir").click(function(e){
     createDir();
     showSubfolders($('.h_node').last().attr('id'));
-    $('#file_input').val('');
-});
-
-//delete current directory
-$("#delete_dir").click(function(e){
-    deleteDir();
-    navigate($('.h_node')[$('.h_node').last().index() - 1]);
     $('#file_input').val('');
 });
 

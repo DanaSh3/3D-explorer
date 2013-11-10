@@ -24,3 +24,30 @@ var statusMessage = function(text, errMessage){
         }, 1750);
     });
 }
+
+function rightClick(){
+    $(".h_node").on('contextmenu', function(ev) {
+        var that = this;
+        var menu = $(".custom-menu");
+        menu.show();
+        menu.css({top: event.pageY + "px", left: event.pageX + "px"});
+        $(menu).click(function(){
+            if (that.id == "/home"){
+                statusMessage("Cannot delete HOME", true);
+                return false;
+            }
+            var o = $('.h_node')[$(that).index()-1];
+            if(o == undefined) return; //because multiple calls are being made to the method
+            var id = that.id;
+            deleteDir(id); //delete the selected file
+            navigate(o); //navigate to the selected file
+            $('#file_input').val('');
+
+        });
+        return false;
+    });
+    $(document).bind("click", function(event) {
+        $("div.custom-menu").hide();
+    });
+
+};
