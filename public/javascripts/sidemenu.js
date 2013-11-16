@@ -5,6 +5,7 @@
 /******************************************LISTEN FOR SERVER RESPONSE*******************************************/
 
 var socket;
+
 window.onload = function() {
     socket = io.connect('http://localhost:3000'); //initialize socket io on local server
     //user navigated to a folder
@@ -24,6 +25,7 @@ window.onload = function() {
             $('#folder_contents').append("<div>No Available Files/Folders</div>");
          }
     });
+
     //display status msg
     socket.on('status', function(data){
         statusMessage(data.status, data.isError);
@@ -126,3 +128,5 @@ $("li .create_directory").click(function(e){
     $("form").toggle();
     $('#file_input').focus();
 });
+
+// ---------------------------------------------------------------------------

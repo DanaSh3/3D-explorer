@@ -2,7 +2,197 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df08a87a-6254-41b4-ac7f-d48e8b3ed79d" name="Default" comment="Semi final state">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sidemenu.ejs" afterPath="$PROJECT_DIR$/views/sidemenu.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/MainActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/Normalization.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$dimen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$layout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$menu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes/com/example/normalization/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/dexedLibs/android-support-v4-d99af150879ce2dc5376c90b08181fc6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/libs/android-support-v4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/arroway.de_metal+structure+06_d100_flat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson06/crate.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson07/crate.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson12/crate.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson13/crate.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/crate.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/earth-specular.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/earth-specular.pdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/earth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/earth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson08/glass.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-hdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-ldpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-mdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xhdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xxhdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-hdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-ldpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-mdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xhdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xxhdpi/horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/ic_launcher-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/macbook.3DS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/macbook.blend" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson11/moon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson12/moon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson13/moon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/moon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson10/mud.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson05/nehe.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/outer_space.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/outer_space_512.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/outer_space_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/resources.ap_" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example03/smoke.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson09/star.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-hdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-ldpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-mdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xhdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/res/drawable-xxhdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-hdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-ldpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-mdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xhdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/drawable-xxhdpi/vertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/gen/com/example/normalization/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/src/com/example/normalization/MainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/ObjToJSON.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/gen/com/example/normalization/R.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example01/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/Teapot.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/WebGLExport.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/layout/activity_main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values-sw600dp/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values-sw720dp-land/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example02/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson01/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson02/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson03/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson04/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson05/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson06/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson07/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson08/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson09/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson10/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson11/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson12/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson13/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/glMatrix-0.9.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example01/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example02/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson01/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson02/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson03/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson04/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson05/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson06/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson07/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson08/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson09/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson10/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson11/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson12/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson13/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/bin/jarlist.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/macbook.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/macbook.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/menu/main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example03/particles-01-noenable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example03/particles-01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example03/particles-02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example03/particles-03.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values-v11/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Android/Normalization/res/values-v14/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/example02/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson03/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson04/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson05/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson06/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson07/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson08/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson09/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson10/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson11/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson12/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson13/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson14/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson15/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson16/webgl-utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/webgl-lessons-master/webgl-lessons-master/lesson10/world.txt" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\6 Универов выдающих гранты иностранцам.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Alpha Kappa Mu.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\BHCC_Catalog2011-12Web.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Brown University\Brown University.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Cornell University\2012 Transfer Supplement.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Cornell University\2012 transfer special requirements.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Cornell University\Activity.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Cornell University\Cornell University.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Cornell University\Extracurricular experience.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\Application for Bunker Hill Community College.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\EasySteps BHCC.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\ICAdmissions.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\MIT helpful tips for international students.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\TOP 20 colleges IT.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\mit.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Gmail\us top computer science.doc" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Essay 1.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Essay 2.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Essay 3.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Essay 4.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\MIT Essays\Essay 1.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\MIT Essays\Essay 2.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\MIT Essays\Essay 3.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\MIT Essays\Essay 4.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\MIT Transfer Application 2012.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Massachusetts Institute of Technology.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\The_reasons_I_want_to_attend_MIT new.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\MIT\Why_I_am_transferring_from_my_current_college_new.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\My Universities.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Top 100 Computer Science Graduate Schools Rankings .docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\UMass Amherst\MassTransfer application.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\UMass Amherst\UMass Amherst.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\UMass Amherst\UMass_Amherst_Int_Sponsor_Statement.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\UMass Boston\UMass_Boston_cert_of_finance.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Высшая лига университетов.docx" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Universities\Расписание Айбека.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/sidemenu.js" afterPath="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/tree.js" afterPath="$PROJECT_DIR$/public/javascripts/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/webgl_core.js" afterPath="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -28,39 +218,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="12" selection-start="10" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="132" column="27" selection-start="3969" selection-end="3969" vertical-scroll-proportion="0.0" vertical-offset="1771" max-vertical-offset="2397">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webgl_core.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="38" selection-start="5196" selection-end="5235" vertical-scroll-proportion="-1.7194127" vertical-offset="3502" max-vertical-offset="7531">
               <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#3893#5063#0" expanded="false" />
+                <element signature="e#4608#4663#0" expanded="false" />
+                <element signature="e#5839#6109#0" expanded="false" />
+                <element signature="e#6252#6367#0" expanded="false" />
+                <element signature="e#6399#7051#0" expanded="false" />
+                <element signature="e#7122#7206#0" expanded="false" />
+                <element signature="e#7240#7565#0" expanded="false" />
+                <element signature="e#7600#7926#0" expanded="false" />
+                <element signature="e#7958#8407#0" expanded="false" />
+                <element signature="e#8441#8890#0" expanded="false" />
+                <element signature="e#8935#9636#0" expanded="false" />
+                <element signature="e#9680#10138#0" expanded="false" />
+                <element signature="e#10183#11038#0" expanded="false" />
+                <element signature="e#11083#11141#0" expanded="false" />
+                <element signature="e#11187#11245#0" expanded="false" />
+                <element signature="e#14509#15308#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="sidemenu.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2414">
+            <state line="32" column="16" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2346">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
+      <file leaf-file-name="main.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/main.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5269565" vertical-offset="989" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="20" column="9" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -69,16 +274,7 @@
       <file leaf-file-name="sidemenu.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="518" selection-end="518" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webgl_core.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="50" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="8755">
+            <state line="22" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -98,7 +294,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testing_images" />
+        <entry key="$PROJECT_DIR$" value="aibek-improvements" />
       </map>
     </option>
   </component>
@@ -113,17 +309,19 @@
       <list>
         <option value="$PROJECT_DIR$/testing.md" />
         <option value="$PROJECT_DIR$/public/javascripts/hierarchy.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/views/header.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
-        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/tree.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
+        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/webgl_mouse.js" />
+        <option value="$PROJECT_DIR$/views/header.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
         <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/tree.js" />
       </list>
     </option>
   </component>
@@ -159,7 +357,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,7 +431,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,13 +470,24 @@
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="My Pictures" />
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,15 +495,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\javascripts" />
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\images" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Pictures" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Documents" />
-      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -392,7 +620,15 @@
       <created>1384100991546</created>
       <updated>1384100991546</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Semi final state">
+      <created>1384101990659</created>
+      <updated>1384101990659</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Semi final state">
+      <created>1384636799537</created>
+      <updated>1384636799538</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -419,45 +655,25 @@
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73322684" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41871166" sideWeight="0.49960968" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16627635" sideWeight="0.26677316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16003123" sideWeight="0.41257668" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.50117093" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5874233" sideWeight="0.50117093" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.50117093" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16627635" sideWeight="0.6741214" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -479,12 +695,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Semi final state" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/javascripts/webgl_core.js</url>
+          <line>299</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/ejs/package.json">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="379" selection-end="379" vertical-scroll-proportion="0.42424244" vertical-offset="102" max-vertical-offset="663" />
+        <state line="6" column="44" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
@@ -494,89 +719,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/sidemenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="17" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.51" vertical-offset="918" max-vertical-offset="1802">
-          <folding />
-        </state>
+        <state line="72" column="17" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.51" vertical-offset="918" max-vertical-offset="1802" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/foldernav.ejs">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="0.3554007" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
+        <state line="12" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="0.3554007" vertical-offset="0" max-vertical-offset="574" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
+    <entry file="file://$PROJECT_DIR$/views/foldernav.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="2227">
-          <folding>
-            <marker date="1384090182028" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="820" selection-end="820" vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/footer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="162" selection-end="162" vertical-scroll-proportion="0.1184669" vertical-offset="0" max-vertical-offset="574">
-          <folding />
-        </state>
+        <state line="7" column="7" selection-start="235" selection-end="235" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="10" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="53" selection-start="607" selection-end="610" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="50" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="8755">
+        <state line="52" column="20" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1649">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="2414">
+        <state line="132" column="27" selection-start="3969" selection-end="3969" vertical-scroll-proportion="0.0" vertical-offset="1771" max-vertical-offset="2397">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core_orig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="535" column="0" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.0" vertical-offset="8584" max-vertical-offset="9197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1629393" vertical-offset="0" max-vertical-offset="626" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="518" selection-end="518" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
+        <state line="22" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5269565" vertical-offset="989" max-vertical-offset="1615">
-          <folding />
+        <state line="167" column="38" selection-start="5196" selection-end="5235" vertical-scroll-proportion="-1.7194127" vertical-offset="3502" max-vertical-offset="7531">
+          <folding>
+            <element signature="e#3893#5063#0" expanded="false" />
+            <element signature="e#4608#4663#0" expanded="false" />
+            <element signature="e#5839#6109#0" expanded="false" />
+            <element signature="e#6252#6367#0" expanded="false" />
+            <element signature="e#6399#7051#0" expanded="false" />
+            <element signature="e#7122#7206#0" expanded="false" />
+            <element signature="e#7240#7565#0" expanded="false" />
+            <element signature="e#7600#7926#0" expanded="false" />
+            <element signature="e#7958#8407#0" expanded="false" />
+            <element signature="e#8441#8890#0" expanded="false" />
+            <element signature="e#8935#9636#0" expanded="false" />
+            <element signature="e#9680#10138#0" expanded="false" />
+            <element signature="e#10183#11038#0" expanded="false" />
+            <element signature="e#11083#11141#0" expanded="false" />
+            <element signature="e#11187#11245#0" expanded="false" />
+            <element signature="e#14509#15308#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

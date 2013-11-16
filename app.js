@@ -112,7 +112,9 @@ io.sockets.on('connection', function (socket) {
         }
     };
 
-    socket.on('children', function(data){
+
+    // new stuff for 3D
+    socket.on('showdir3D', function(data){
         var path = getPath(data.dir);
         if (!file_exists(path)){
             return;
@@ -129,9 +131,6 @@ io.sockets.on('connection', function (socket) {
         }
         data.files = files;
         data.isDir = isDir;
-        var msg = "Read: " + data.dir;
-        console.log(msg);
-        data.msg = msg;
-        io.sockets.emit('getchildren', data);
+        io.sockets.emit('showfiles3D', data);
     });
 });
