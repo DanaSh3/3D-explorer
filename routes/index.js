@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-    res.render('main', { title: 'Main Room' });
+    res.render('main', { title: '3D Explorer' });
 };
