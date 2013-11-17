@@ -8,6 +8,7 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
+var util = require('util');
 
 var app = express();
 
@@ -56,6 +57,7 @@ io.sockets.on('connection', function (socket) {
         }
         //data.isDir = fs.statSync(path).isDirectory(); //determine if directory or file
         socket.emit('status', data);
+//        socket.emit('dirCreated', data);
     });
     //SHOW DIRECTORY
     socket.on('showdir', function(data){
@@ -122,15 +124,25 @@ io.sockets.on('connection', function (socket) {
         if (!fs.lstatSync(path).isDirectory()){
             return;
         }
-        var files = fs.readdirSync(path);
 
-        var isDir = [];
-        //check each file/folder to determine if directory
-        for (var i = 0; i < files.length; i++){
-            isDir[i] = fs.lstatSync(path + "/" + files[i]).isDirectory();
-        }
-        data.files = files;
-        data.isDir = isDir;
-        io.sockets.emit('showfiles3D', data);
+        fs.readdir(path, function(err, files) {
+//            console.log("Reading: " + path);
+            if (err)
+            {
+                console.log(err);
+                return;
+            }
+            var isDir = [];
+            //check each file/folder to determine if directory
+            for (var i = 0; i < files.length; i++){
+                isDir[i] = fs.lstatSync(path + "/" + files[i]).isDirectory();
+//                console.log("__________________________________");
+//                console.log(util.inspect(files[i]));
+//                console.log(util.inspect(fs.lstatSync(path + "/" + files[i]), {showHidden: true, depth: null}));
+            }
+            data.files = files;
+            data.isDir = isDir;
+            io.sockets.emit('showfiles3D', data);
+        });
     });
 });

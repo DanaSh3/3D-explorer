@@ -6,6 +6,11 @@ var objects;
 var homeFolder;
 var folders = new Array();
 
+var initSockets3D;
+var lookUpFolderByName;
+var makeSphere;
+var folder;
+
 $(document).ready(function () {
 
 // important stuff: renderer - it shows everything and is appended to HTML
@@ -85,13 +90,8 @@ $(document).ready(function () {
         dragging = false;
         prevDrag = new THREE.Vector3(0,0,0);
 
-        // add mouse move listener (remember we heard about it in class?)
+        // viewer object
         var viewer = document.getElementById('viewer');
-//        viewer.addEventListener('mousemove', onDocumentMouseMove, false);
-//        viewer.addEventListener('mousedown', onDocumentMouseDown, false);
-//        viewer.addEventListener('mouseup', onDocumentMouseUp, false);
-//        viewer.addEventListener('mouseleave', onDocumentMouseLeave, false);
-
 
         //##########################################################################
         //                           WebGL starts here!
@@ -128,9 +128,9 @@ $(document).ready(function () {
         initLights();
         initMouseWheel();
 
-        setTimeout(function(){
-            initSockets3D();
-        }, 1000);
+//        setTimeout(function(){
+//            initSockets3D();
+//        }, 1000);
 
     }
 
@@ -475,7 +475,7 @@ $(document).ready(function () {
     /* ---------------------------------------- SOCKETS IMPLEMENTATION ----------------------------------*/
 
 
-    function initSockets3D()
+    initSockets3D = function ()
     {
         filenames.push(home);
         homeFolder = new folder(FID++, "Home", 0, 0, globalShell.geometry.radius, home, 0);
@@ -498,6 +498,10 @@ $(document).ready(function () {
                 }
             }
         });
+
+//        socket.on('dirCreated', function (data){
+//            if (data.)
+//        });
     }
 
     function lookUpFolderByID (fid)
@@ -508,7 +512,15 @@ $(document).ready(function () {
         return null;
     }
 
-    function folder (fid, foldername, centerX, centerY, radius, path, depth, isDir) {
+    lookUpFolderByName = function(path)
+    {
+        for (var f = 0; f < folders.length; f++)
+            if (folders[f].path === path)
+                return folders[f];
+        return null;
+    }
+
+   folder = function (fid, foldername, centerX, centerY, radius, path, depth, isDir) {
         this.fid = fid;
         this.foldername = foldername;
         this.files = files;
@@ -571,7 +583,7 @@ $(document).ready(function () {
         }
     }
 
-    function makeSphere(rad) {
+    makeSphere = function(rad) {
         if (rad === 0)
             rad = RADIUS;
         var ret = new THREE.Mesh(

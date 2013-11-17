@@ -8,6 +8,9 @@ var socket;
 
 window.onload = function() {
     socket = io.connect('http://localhost:3000'); //initialize socket io on local server
+
+    initSockets3D();
+
     //user navigated to a folder
     socket.on('showfiles', function (data) {
         var files = data.files;
@@ -107,8 +110,15 @@ var deleteDir = function(path){
 //create the directory when the user presses enter or clicks on the submit button:
 $("#createDir").click(function(e){
     createDir();
-    showSubfolders($('.h_node').last().attr('id'));
+    var currentDirectory = $('.h_node').last().attr('id');
+    var dir = $('#file_input').val();
+
+    showSubfolders(currentDirectory);
+
+    alert($('#file_input').val());
     $('#file_input').val('');
+
+
 });
 
 //hide menu
