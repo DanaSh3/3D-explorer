@@ -45,9 +45,11 @@ Tree.prototype = {
 
 function fillChildren(filename, node)
 {
+    if (socket === undefined)
+        return;
     socket.emit('children', {dir: filename});
     socket.on('getchildren', function(data) {
-        alert("FILENAME: " + node.filename + " " + data.msg);
+//        alert("FILENAME: " + node.filename + " " + data.msg);
         for (var i = 0; i < data.files.length; i++)
         {
             node.children.push(new Node(data.files[i], data.isDir[i]));

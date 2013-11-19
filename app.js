@@ -8,6 +8,7 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
+var util = require('util');
 
 var app = express();
 
@@ -53,6 +54,8 @@ io.sockets.on('connection', function (socket) {
                     data.status = "Failed to create " + data.dir;
                 }
             });
+
+            socket.emit('dirCreated', data);
         }
         //data.isDir = fs.statSync(path).isDirectory(); //determine if directory or file
         socket.emit('status', data);
@@ -112,7 +115,9 @@ io.sockets.on('connection', function (socket) {
         }
     };
 
-    socket.on('children', function(data){
+
+    // new stuff for 3D
+    socket.on('showdir3D', function(data){
         var path = getPath(data.dir);
         if (!file_exists(path)){
             return;
@@ -120,18 +125,25 @@ io.sockets.on('connection', function (socket) {
         if (!fs.lstatSync(path).isDirectory()){
             return;
         }
-        var files = fs.readdirSync(path);
 
-        var isDir = [];
-        //check each file/folder to determine if directory
-        for (var i = 0; i < files.length; i++){
-            isDir[i] = fs.lstatSync(path + "/" + files[i]).isDirectory();
-        }
-        data.files = files;
-        data.isDir = isDir;
-        var msg = "Read: " + data.dir;
-        console.log(msg);
-        data.msg = msg;
-        io.sockets.emit('getchildren', data);
+        fs.readdir(path, function(err, files) {
+//            console.log("Reading: " + path);
+            if (err)
+            {
+                console.log(err);
+                return;
+            }
+            var isDir = [];
+            //check each file/folder to determine if directory
+            for (var i = 0; i < files.length; i++){
+                isDir[i] = fs.lstatSync(path + "/" + files[i]).isDirectory();
+//                console.log("__________________________________");
+//                console.log(util.inspect(files[i]));
+//                console.log(util.inspect(fs.lstatSync(path + "/" + files[i]), {showHidden: true, depth: null}));
+            }
+            data.files = files;
+            data.isDir = isDir;
+            io.sockets.emit('showfiles3D', data);
+        });
     });
 });

@@ -5,8 +5,12 @@
 /******************************************LISTEN FOR SERVER RESPONSE*******************************************/
 
 var socket;
+
 window.onload = function() {
     socket = io.connect('http://localhost:3000'); //initialize socket io on local server
+
+    initSockets3D();
+
     //user navigated to a folder
     socket.on('showfiles', function (data) {
         var files = data.files;
@@ -24,6 +28,7 @@ window.onload = function() {
             $('#folder_contents').append("<div>No Available Files/Folders</div>");
          }
     });
+
     //display status msg
     socket.on('status', function(data){
         statusMessage(data.status, data.isError);
@@ -105,8 +110,14 @@ var deleteDir = function(path){
 //create the directory when the user presses enter or clicks on the submit button:
 $("#createDir").click(function(e){
     createDir();
-    showSubfolders($('.h_node').last().attr('id'));
+    var currentDirectory = $('.h_node').last().attr('id');
+    var dir = $('#file_input').val();
+
+    showSubfolders(currentDirectory);
+
     $('#file_input').val('');
+
+
 });
 
 //hide menu
@@ -126,3 +137,5 @@ $("li .create_directory").click(function(e){
     $("form").toggle();
     $('#file_input').focus();
 });
+
+// ---------------------------------------------------------------------------
