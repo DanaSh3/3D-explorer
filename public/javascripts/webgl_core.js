@@ -322,8 +322,6 @@ $(document).ready(function () {
         // if you clicked on something
         if (intersects.length > 0) {
             // here is the object that was clicked, you can call a function and pass it as a parameter
-//            intersects[ 0 ].object.material.color.setHex(Math.random() * 0xffffff);
-//            console.log("1");
             if (intersects[0].object.material.opacity < 0.95 && intersects[ 1 ] !== undefined)
                 objectClicked(intersects[ 1 ].object);
             else
@@ -418,7 +416,7 @@ $(document).ready(function () {
     var distanceBuffer = [];
     function checkDistance()
     {
-        if (currentDepth === 0 && camera.position.distanceTo(new THREE.Vector3(0,0,0)) >= (globalShell.geometry.radius - 100))
+        if (currentDepth === 0 && camera.position.distanceTo(new THREE.Vector3(0,0,0)) >= (globalShell.geometry.radius - 150))
             return false;
 
         for (var i = 0; i < folders.length; i++)
