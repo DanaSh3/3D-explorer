@@ -115,7 +115,6 @@ $("#createDir").click(function(e){
 
     showSubfolders(currentDirectory);
 
-    alert($('#file_input').val());
     $('#file_input').val('');
 
 

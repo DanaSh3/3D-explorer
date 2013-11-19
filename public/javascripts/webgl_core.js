@@ -11,6 +11,8 @@ var lookUpFolderByName;
 var makeSphere;
 var folder;
 
+var globalTest;
+
 $(document).ready(function () {
 
 // important stuff: renderer - it shows everything and is appended to HTML
@@ -69,10 +71,22 @@ $(document).ready(function () {
     var BUFF_DIST = 6*RADIUS;
     var total= 0; //change this to any number
 
+
+    // for file system
+
     var files = new Array();
     var FID = 0;
     var home = "/home";
     var currentDepth = 0;
+    var currentFolder = {};
+
+    // for hovering foldernames
+
+    var updateFcts = [];
+    var planes = [];
+
+    // animating folders
+    var animated = [];
 
     init();
     animate(new Date().getTime());
@@ -117,6 +131,9 @@ $(document).ready(function () {
         // finally initializing scene - you'll be adding stuff to it
         scene = new THREE.Scene();
 
+        // for dynamic window resize
+        THREEx.WindowResize(renderer, camera);
+
         // projector is used for tracing where you click
         projector = new THREE.Projector();
 
@@ -127,36 +144,19 @@ $(document).ready(function () {
         initGeometry();
         initLights();
         initMouseWheel();
-
-//        setTimeout(function(){
-//            initSockets3D();
-//        }, 1000);
-
     }
 
     var T;
 
     function initGeometry() {
-        starTexture = new THREE.ImageUtils.loadTexture('/images/outer_space_512.jpg', {}, function (){
-            renderer.render(scene, camera);
-        });
+        starTexture = new THREE.ImageUtils.loadTexture('/images/outer_space_512.jpg', {}, function (){});
         starTexture.wrapS = starTexture.wrapT = THREE.RepeatWrapping;
         starTexture.repeat.set( 10, 10 );
         starTexture.needsUpdate = true;
 
         variableMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide, transparent: true, opacity: 1.0});
-        var starGeometry = new THREE.SphereGeometry(1000, 32, 32);
-        shell = new THREE.Mesh(starGeometry, variableMaterial);
-//        scene.add(shell);
+        outerShellMaterial = new THREE.MeshLambertMaterial({map: starTexture, side: THREE.DoubleSide});
 
-        var spaceTexture = new THREE.ImageUtils.loadTexture('/images/outer_space_512.jpg', {}, function (){
-            renderer.render(scene, camera);
-        });
-        spaceTexture.wrapS = spaceTexture.wrapT = THREE.RepeatWrapping;
-        spaceTexture.repeat.set( 10, 10 );
-        spaceTexture.needsUpdate = true;
-
-        outerShellMaterial = new THREE.MeshLambertMaterial({map: spaceTexture, side: THREE.DoubleSide});
         globalShell = new THREE.Mesh(new THREE.SphereGeometry(5000, 32, 32), outerShellMaterial);
         scene.add(globalShell);
     }
@@ -174,23 +174,16 @@ $(document).ready(function () {
 //        light.position.set(0, 200, 0);
         scene.add(light);
 
-        var topLight = new THREE.PointLight();
+        var topLight = new THREE.PointLight(0xffffff, 2.0);
         topLight.position.set(0, globalShell.geometry.radius * 0.9, 0);
-        scene.add(topLight);
+        console.log("INITIALIZING LIGHTS");
+        console.log("Radius: " + globalShell.geometry.radius );
+//        scene.add(topLight);
+
+        makeLight(0, 0, globalShell.geometry.radius);
 
         ambientLight = new THREE.AmbientLight(0x404040);
         scene.add(ambientLight);
-    }
-
-// knowing where the center is, and some other non-important stuff
-    function onWindowResize() {
-        windowHalfX = window.innerWidth / 2;
-        windowHalfY = window.innerHeight / 2;
-
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-
-        renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
 // when we move mouse, this gets called (remember mouse events in class?) - we added listener before
@@ -215,6 +208,7 @@ $(document).ready(function () {
 //        light.position.y -= zoom * 10;
 //        light.target.position.y -= zoom * 10;
 
+        updateText();
         render();
     }
 
@@ -330,7 +324,10 @@ $(document).ready(function () {
             // here is the object that was clicked, you can call a function and pass it as a parameter
 //            intersects[ 0 ].object.material.color.setHex(Math.random() * 0xffffff);
 //            console.log("1");
-            objectClicked(intersects[ 0 ].object);
+            if (intersects[0].object.material.opacity < 0.95 && intersects[ 1 ] !== undefined)
+                objectClicked(intersects[ 1 ].object);
+            else
+                objectClicked(intersects[ 0 ].object);
         }
 
         dragging = true;
@@ -366,16 +363,15 @@ $(document).ready(function () {
             temp.add(vector);
 
             vector.sub(prevDrag);
-            vector.multiplyScalar(-1000 + Math.log(1 / (currentDepth*2 + 2) * 500));
+            vector.multiplyScalar(-1000 / Math.pow(3, currentDepth));
 
             camera.position.add(vector);
             cameraTarget.add(vector);
-//            light.position.add(vector);
-//            light.target.position.add(vector);
 
             prevDrag = temp;
 
             checkDistance();
+            updateText();
             render();
         }
     });
@@ -399,9 +395,9 @@ $(document).ready(function () {
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
         if (checkDistance())
-            zoomCamera(delta*(5 - Math.log(1 / (currentDepth*2 + 2)) * 10));
+            zoomCamera(delta*(10 / Math.pow(3, currentDepth)));
         else if (delta > 0)
-            zoomCamera(delta*(5 - Math.log(1 / (currentDepth*2 + 2)) * 10));
+            zoomCamera(delta*(10 / Math.pow(3, currentDepth)));
 
         render();
 
@@ -419,6 +415,7 @@ $(document).ready(function () {
         render();
     }
 
+    var distanceBuffer = [];
     function checkDistance()
     {
         if (currentDepth === 0 && camera.position.distanceTo(new THREE.Vector3(0,0,0)) >= (globalShell.geometry.radius - 100))
@@ -427,19 +424,25 @@ $(document).ready(function () {
         for (var i = 0; i < folders.length; i++)
         {
             var distance = camera.position.distanceTo(objects[i].position);
-            if (distance < 5 * objects[i].geometry.radius && distance > objects[i].geometry.radius - 1)
+            if (distance < 6 * objects[i].geometry.radius && distance > objects[i].geometry.radius - 1)
             {
-               objects[i].material.opacity = (distance - objects[i].geometry.radius) / 5 / objects[i].geometry.radius;
+               objects[i].material.opacity = (distance - objects[i].geometry.radius) / 6 / objects[i].geometry.radius;
                if (lookUpFolderByID(i).children.length === 0)
                    lookUpFolderByID(i).loadChildren();
             }
             else
                 objects[i].material.opacity = 1.0;
 
-            if (distance < objects[i].geometry.radius)
-                currentDepth =  lookUpFolderByID(i).depth;
+            if (distance < objects[i].geometry.radius && objects[i] !== globalShell)
+                distanceBuffer.push(folders[i]);
         }
 
+        if (distanceBuffer.length === 0)
+            currentFolder = homeFolder;
+        else
+            currentFolder = distanceBuffer.pop();
+        currentDepth =  currentFolder.depth;
+        distanceBuffer.length = 0;
         return true;
     }
 
@@ -465,10 +468,39 @@ $(document).ready(function () {
 
     function objectClicked(object)
     {
-        object.material.color.setHex(Math.random() * 0xffffff);
+        if (object === globalShell)
+            return;
 
-        if (lookUpFolderByID(objects.indexOf(object)).children.length === 0)
-            lookUpFolderByID(objects.indexOf(object)).loadChildren();
+        var offset = 0;
+        var animation = true;
+        var initPos = object.position.y;
+
+        if (animated.indexOf(objects.indexOf(object)) !== -1)       // Already being animated
+            return;
+
+        animated.push(objects.indexOf(object));
+
+        setTimeout(stopAnimation, 1000);
+        animateSphere();
+
+        function animateSphere()
+        {
+            if (animation === true)
+            {
+                object.position.y = initPos + Math.sin(offset += Math.PI / 18) * 10;
+                render();
+                setTimeout(animateSphere, 10);
+            }
+        }
+
+        function stopAnimation()
+        {
+            animation = false;
+            object.position.y = initPos;
+            animated = jQuery.grep(animated, function(value) {
+                return value != objects.indexOf(object);
+            });
+        }
     }
 
 
@@ -482,16 +514,17 @@ $(document).ready(function () {
         folders.push(homeFolder);
         objects.push(globalShell);
         homeFolder.loadChildren();
+        currentFolder = homeFolder;
 
         socket.on('showfiles3D', function (data) {
 //            console.log("DIR: " + data.dir + "\nFID: " + data.fid + "\nFILES: " + data.files.length + "\nDIRS: " + data.isDir.length + "\nDEPTH: " + data.depth);
             if(data.files.length) {
                 for (var i = 0; i < data.files.length; i++){
-                    var rad = 500 + Math.log(1 / (data.depth + 1)) * 600;
+                    var rad = 600 / (Math.pow(5, data.depth));
                     if(data.isDir[i]){
                         lookUpFolderByID(data.fid).insert(data.files[i], true, makeSphere(rad), rad);
                     }else{
-                        var side = 500 + Math.log(1 / (data.depth + 1)) * 650;
+                        var side = 600 / (Math.pow(5, data.depth));
                         lookUpFolderByID(data.fid).insert(data.files[i], true, makeCube(side), rad);
                     }
                     filenames.push(data.files[i]);
@@ -499,9 +532,9 @@ $(document).ready(function () {
             }
         });
 
-//        socket.on('dirCreated', function (data){
-//            if (data.)
-//        });
+        socket.on('dirCreated', function (data){
+            homeFolder.insert(data.dir, true, makeSphere(500), 500);
+        });
     }
 
     function lookUpFolderByID (fid)
@@ -546,7 +579,8 @@ $(document).ready(function () {
             if (this.orbit_count === 0) {
                 this.arr[0] = [];
                 this.arr[0][0] = elem;
-                initElement(elem, this.centerX, this.centerY);
+                initElement(elem, this.centerX, this.centerY, this.foldername);
+                initText(elem, insertFilename, rad);
                 var newFolder = new folder(FID++, insertFilename, this.centerX, this.centerY, rad, this.path + "/" + insertFilename, this.depth+1, insertIsDir);
                 folders.push(newFolder);
                 this.children.push(newFolder);
@@ -555,9 +589,10 @@ $(document).ready(function () {
             else{
                 this.arr[this.orbit_count].push(elem);
 
-                var insX = this.centerX + position_helper(this.orbit_count, this.arr[this.orbit_count].length, 'x', 3 * rad);
-                var insY = this.centerY + position_helper(this.orbit_count, this.arr[this.orbit_count].length, 'y', 3 * rad);
-                initElement( elem, insX, insY);
+                var insX = this.centerX + position_helper(this.orbit_count, this.arr[this.orbit_count].length, 'x', 2.5 * rad);
+                var insY = this.centerY + position_helper(this.orbit_count, this.arr[this.orbit_count].length, 'y', 2.5 * rad);
+                initElement( elem, insX, insY, this.foldername);
+                initText(elem, insertFilename, rad);
 
                 if(this.arr[this.orbit_count].length === this.orbit_count*5)
                     this.orbit_count++;
@@ -601,12 +636,12 @@ $(document).ready(function () {
     }
 
     function makeLight(centerX, centerY, radius) {
-        var light = new THREE.PointLight();
+        var light = new THREE.PointLight(0xffffff, 3.0);
         light.position.set(centerX, radius * 0.9, centerY);
         scene.add(light);
     }
 
-    function initElement(elem, pos_x, pos_y) {
+    function initElement(elem, pos_x, pos_y, name) {
         elem.position.set(pos_x, 0, pos_y);         // set position by params
         elem.castShadow = true;
         elem.receiveShadow = true;
@@ -626,4 +661,66 @@ $(document).ready(function () {
                 return obt*rad*Math.sin(cnt*((2*Math.PI)/n));
         }
     }
+
+
+    function initText(elem, name, rad){
+        //////////////////////////////////////////////////////////////////////////////////
+        //		build the texture						//
+        //////////////////////////////////////////////////////////////////////////////////
+
+        var arr = name.split('/');
+        name = arr[arr.length-1];
+
+        var canvas        = document.createElement( 'canvas' );
+        canvas.width        = name.length * 35;
+        canvas.height        = 60;
+        var context        = canvas.getContext( '2d' );
+        context.font        = "bolder 50px Verdana";
+        context.textAlign = 'center';
+        context.fillStyle = 'black';
+        context.fillText(name, canvas.width / 2, 50/2+canvas.height/2);
+        var texture = new THREE.Texture( canvas );
+        texture.needsUpdate        = true;
+        texture.anisotropy        = 16
+
+        var geometry	= new THREE.PlaneGeometry(canvas.width, canvas.height);
+        var material	= new THREE.MeshBasicMaterial();
+
+        material.map	= texture;
+        material.side	= THREE.DoubleSide;
+
+        var plane = new THREE.Mesh(geometry, material);
+        plane.position.set(elem.position.x, elem.position.y, elem.position.z);
+        plane.position.y += 1.1 * rad;
+
+        scene.add(plane);
+        planes.push(plane);
+
+        THREEx.Transparency.init(planes);
+        updateFcts.push(function(delta, now){
+            THREEx.Transparency.update(planes, camera)
+        })
+    }
+
+    function updateText ()
+    {
+        for (var i = 0; i < planes.length; i++)
+        {
+            planes[i].rotation.y = 0;
+
+            var startVector = new THREE.Vector3(0,0,1);
+            startVector.applyAxisAngle(new THREE.Vector3(0,1,0), Math.PI);
+
+            var cameraDirection = new THREE.Vector3(1,0,0);
+            cameraDirection.subVectors(camera.position, planes[i].position);
+
+            var angle = startVector.angleTo(cameraDirection);
+
+            if (cameraDirection.x < 0)
+                planes[i].rotation.y = 135 + angle;
+            else
+                planes[i].rotation.y = 135 - angle;
+        }
+    }
+
 });

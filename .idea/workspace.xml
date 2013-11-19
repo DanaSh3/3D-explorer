@@ -2,158 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df08a87a-6254-41b4-ac7f-d48e8b3ed79d" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\.project" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\Normalization.apk" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\MainActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\classes\com\example\normalization\R.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\dexedLibs\android-support-v4-d99af150879ce2dc5376c90b08181fc6.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\jarlist.cache" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-hdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-hdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-ldpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-ldpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-mdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-mdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xhdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xhdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xxhdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\res\drawable-xxhdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\bin\resources.ap_" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\gen\com\example\normalization\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\gen\com\example\normalization\R.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-hdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-hdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-ldpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-ldpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-mdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-mdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xhdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xhdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xxhdpi\horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\drawable-xxhdpi\vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Android\Normalization\src\com\example\normalization\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example01\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example01\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example02\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example02\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example02\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example03\particles-01-noenable.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example03\particles-01.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example03\particles-02.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example03\particles-03.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\example03\smoke.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson01\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson01\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson02\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson02\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson03\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson03\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson03\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson04\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson04\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson04\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson05\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson05\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson05\nehe.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson05\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson06\crate.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson06\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson06\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson06\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson07\crate.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson07\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson07\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson07\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson08\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson08\glass.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson08\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson08\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson09\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson09\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson09\star.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson09\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson10\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson10\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson10\mud.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson10\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson10\world.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson11\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson11\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson11\moon.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson11\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson12\crate.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson12\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson12\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson12\moon.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson12\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson13\crate.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson13\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson13\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson13\moon.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson13\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\Teapot.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\arroway.de_metal+structure+06_d100_flat.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\earth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson14\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\earth-specular.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\earth-specular.pdn" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\earth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson15\webgl-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\ObjToJSON.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\WebGLExport.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\crate.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\glMatrix-0.9.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\macbook.3DS" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\macbook.blend" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\macbook.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\macbook.obj" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\moon.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\webgl-lessons-master\webgl-lessons-master\lesson16\webgl-utils.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Deep Purple/Deep_Purple._Избранное..pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Godfather-love-theme/Godfather-love-theme-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Godfather-love-theme/Godfather-love-theme-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Godfather-love-theme/Godfather-love-theme-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Led Zeppelin - Stairway to Heaven/Led Zeppelin - Stairway To Heaven/Led Zeppelin - Stairway To Heaven.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Led Zeppelin - Stairway to Heaven/Led Zeppelin - Stairway To Heaven/Stairway To Heaven.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/Led Zeppelin - Stairway to Heaven/Led Zeppelin - Stairway To Heaven/Stairway_To_Heaven.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/threex.transparency.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/threex.windowresize.js" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img044.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img045.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img046.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img047.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img048.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\img049.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\Рецепт.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\Recepies\Рецепт2.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.ejs" afterPath="$PROJECT_DIR$/views/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sidemenu.ejs" afterPath="$PROJECT_DIR$/views/sidemenu.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/sidemenu.js" afterPath="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/webgl_core.js" afterPath="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -178,10 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="33" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.4025559" vertical-offset="1975" max-vertical-offset="2601">
+            <state line="107" column="25" selection-start="3220" selection-end="3222" vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="2618">
               <folding />
             </state>
           </provider>
@@ -190,62 +60,26 @@
       <file leaf-file-name="webgl_core.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="501" column="24" selection-start="16548" selection-end="16613" vertical-scroll-proportion="0.0" vertical-offset="2308" max-vertical-offset="5066">
+            <state line="443" column="44" selection-start="13968" selection-end="13968" vertical-scroll-proportion="-11.96" vertical-offset="6654" max-vertical-offset="11577">
               <folding>
-                <element signature="e#1571#3577#0" expanded="false" />
-                <element signature="e#3619#4789#0" expanded="false" />
-                <element signature="e#4334#4389#0" expanded="false" />
-                <element signature="e#4874#5466#0" expanded="false" />
-                <element signature="e#5565#5835#0" expanded="false" />
-                <element signature="e#5978#6093#0" expanded="false" />
-                <element signature="e#6125#6777#0" expanded="false" />
-                <element signature="e#6848#6932#0" expanded="false" />
-                <element signature="e#6966#7291#0" expanded="false" />
-                <element signature="e#7326#7652#0" expanded="false" />
-                <element signature="e#7684#8133#0" expanded="false" />
-                <element signature="e#8167#8616#0" expanded="false" />
-                <element signature="e#8661#9362#0" expanded="false" />
-                <element signature="e#9406#9864#0" expanded="false" />
-                <element signature="e#9909#10764#0" expanded="false" />
-                <element signature="e#10809#10867#0" expanded="false" />
-                <element signature="e#10913#10971#0" expanded="false" />
-                <element signature="e#11124#12014#0" expanded="false" />
-                <element signature="e#12047#12462#0" expanded="false" />
-                <element signature="e#12498#12935#0" expanded="false" />
-                <element signature="e#12961#13283#0" expanded="false" />
-                <element signature="e#13318#14197#0" expanded="false" />
-                <element signature="e#14235#15034#0" expanded="false" />
-                <element signature="e#15075#15294#0" expanded="false" />
+                <element signature="e#6343#6427#0" expanded="false" />
+                <element signature="e#7179#7628#0" expanded="false" />
+                <element signature="e#7662#8111#0" expanded="false" />
+                <element signature="e#10475#10533#0" expanded="false" />
+                <element signature="e#10579#10637#0" expanded="false" />
+                <element signature="e#14068#14867#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidemenu.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sidemenu.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="34" selection-start="4158" selection-end="4158" vertical-scroll-proportion="-13.44" vertical-offset="1619" max-vertical-offset="2482">
+            <state line="56" column="44" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.63784665" vertical-offset="527" max-vertical-offset="2465">
               <folding>
-                <marker date="1384649573067" expanded="false" signature="2984:2994" placeholder="..." />
+                <marker date="1384650349617" expanded="false" signature="2984:2994" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="9" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidemenu.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -279,7 +113,6 @@
       <list>
         <option value="$PROJECT_DIR$/testing.md" />
         <option value="$PROJECT_DIR$/public/javascripts/hierarchy.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/sidemenu.css" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
@@ -287,11 +120,12 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/footer.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/webgl_mouse.js" />
-        <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/sidemenu.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/sidemenu.ejs" />
+        <option value="$PROJECT_DIR$/views/header.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/webgl_core.js" />
       </list>
     </option>
   </component>
@@ -355,71 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,20 +211,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -466,27 +222,19 @@
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3Dwe/master" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\javascripts" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\images" />
-      <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Pictures" />
       <recent name="E:\Aibek\My homework\Fall 2013\CS 326\3Dexplorer\master\public\home\My Documents" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -495,6 +243,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -602,7 +358,11 @@
       <created>1384638247620</created>
       <updated>1384638247620</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Implemented dynamic loading of folders and files&#10;TODO: make formula for inner folders radius">
+      <created>1384649755181</created>
+      <updated>1384649755181</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -630,10 +390,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4739264" sideWeight="0.49960968" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41564417" sideWeight="0.49960968" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16003123" sideWeight="0.52607363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16003123" sideWeight="0.58435583" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5874233" sideWeight="0.50117093" order="8" side_tool="true" content_ui="tabs" />
@@ -648,6 +408,26 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58785945" sideWeight="0.49882904" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41564417" sideWeight="0.49960968" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5874233" sideWeight="0.50117093" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.49960968" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.49882904" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16003123" sideWeight="0.52607363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -674,29 +454,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/javascripts/webgl_core.js</url>
-          <line>299</line>
+          <line>292</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="161" selection-end="161" vertical-scroll-proportion="0.26064736" vertical-offset="0" max-vertical-offset="1207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/sidemenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="17" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.51" vertical-offset="918" max-vertical-offset="1802" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
@@ -717,23 +482,9 @@
         <state line="7" column="7" selection-start="235" selection-end="235" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="607" selection-end="610" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="442" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core_orig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="535" column="0" selection-start="17367" selection-end="17367" vertical-scroll-proportion="0.0" vertical-offset="8584" max-vertical-offset="9197">
-          <folding />
-        </state>
+        <state line="52" column="20" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
@@ -741,65 +492,68 @@
         <state line="6" column="44" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1629393" vertical-offset="0" max-vertical-offset="626" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/sidemenu.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="21" column="9" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.595" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/threex.transparency.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="34" selection-start="4158" selection-end="4158" vertical-scroll-proportion="-13.44" vertical-offset="1619" max-vertical-offset="2482">
-          <folding>
-            <marker date="1384649573067" expanded="false" signature="2984:2994" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15623" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/threex.windowresize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="12" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.5111821" vertical-offset="88" max-vertical-offset="714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="41" selection-start="306" selection-end="306" vertical-scroll-proportion="0.49918434" vertical-offset="0" max-vertical-offset="1462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="6" selection-start="936" selection-end="936" vertical-scroll-proportion="0.62333333" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="71" selection-start="919" selection-end="919" vertical-scroll-proportion="0.48166665" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="25" selection-start="3220" selection-end="3222" vertical-scroll-proportion="0.0" vertical-offset="1619" max-vertical-offset="2618">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/webgl_core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="501" column="24" selection-start="16548" selection-end="16613" vertical-scroll-proportion="0.0" vertical-offset="2308" max-vertical-offset="5066">
+        <state line="443" column="44" selection-start="13968" selection-end="13968" vertical-scroll-proportion="-11.96" vertical-offset="6654" max-vertical-offset="11577">
           <folding>
-            <element signature="e#1571#3577#0" expanded="false" />
-            <element signature="e#3619#4789#0" expanded="false" />
-            <element signature="e#4334#4389#0" expanded="false" />
-            <element signature="e#4874#5466#0" expanded="false" />
-            <element signature="e#5565#5835#0" expanded="false" />
-            <element signature="e#5978#6093#0" expanded="false" />
-            <element signature="e#6125#6777#0" expanded="false" />
-            <element signature="e#6848#6932#0" expanded="false" />
-            <element signature="e#6966#7291#0" expanded="false" />
-            <element signature="e#7326#7652#0" expanded="false" />
-            <element signature="e#7684#8133#0" expanded="false" />
-            <element signature="e#8167#8616#0" expanded="false" />
-            <element signature="e#8661#9362#0" expanded="false" />
-            <element signature="e#9406#9864#0" expanded="false" />
-            <element signature="e#9909#10764#0" expanded="false" />
-            <element signature="e#10809#10867#0" expanded="false" />
-            <element signature="e#10913#10971#0" expanded="false" />
-            <element signature="e#11124#12014#0" expanded="false" />
-            <element signature="e#12047#12462#0" expanded="false" />
-            <element signature="e#12498#12935#0" expanded="false" />
-            <element signature="e#12961#13283#0" expanded="false" />
-            <element signature="e#13318#14197#0" expanded="false" />
-            <element signature="e#14235#15034#0" expanded="false" />
-            <element signature="e#15075#15294#0" expanded="false" />
+            <element signature="e#6343#6427#0" expanded="false" />
+            <element signature="e#7179#7628#0" expanded="false" />
+            <element signature="e#7662#8111#0" expanded="false" />
+            <element signature="e#10475#10533#0" expanded="false" />
+            <element signature="e#10579#10637#0" expanded="false" />
+            <element signature="e#14068#14867#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/sidemenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="33" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.4025559" vertical-offset="1975" max-vertical-offset="2601">
-          <folding />
+        <state line="56" column="44" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.63784665" vertical-offset="527" max-vertical-offset="2465">
+          <folding>
+            <marker date="1384650349617" expanded="false" signature="2984:2994" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

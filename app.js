@@ -54,10 +54,11 @@ io.sockets.on('connection', function (socket) {
                     data.status = "Failed to create " + data.dir;
                 }
             });
+
+            socket.emit('dirCreated', data);
         }
         //data.isDir = fs.statSync(path).isDirectory(); //determine if directory or file
         socket.emit('status', data);
-//        socket.emit('dirCreated', data);
     });
     //SHOW DIRECTORY
     socket.on('showdir', function(data){
